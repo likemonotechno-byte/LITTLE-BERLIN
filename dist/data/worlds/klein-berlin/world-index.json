@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "worldId": "main-city",
+  "name": "Klein Berlin – Hybrid-Engine Testwelt",
+  "districts": [
+    {
+      "id": "innenstadt",
+      "name": "Innenstadt",
+      "modules": [
+        {
+          "id": "kb-innenstadt-west",
+          "document": "data/worlds/klein-berlin/modules/innenstadt-west.json",
+          "originMeters": { "x": 0, "y": 0, "z": 0 },
+          "rotationDegrees": 0,
+          "boundsMeters": { "width": 100, "depth": 100, "height": 24 }
+        },
+        {
+          "id": "kb-innenstadt-ost",
+          "document": "data/worlds/klein-berlin/modules/innenstadt-ost.json",
+          "originMeters": { "x": 100, "y": 0, "z": 0 },
+          "rotationDegrees": 0,
+          "boundsMeters": { "width": 100, "depth": 100, "height": 24 }
+        }
+      ]
+    }
+  ]
+}

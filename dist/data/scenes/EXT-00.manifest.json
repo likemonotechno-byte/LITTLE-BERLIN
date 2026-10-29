@@ -1,0 +1,70 @@
+{
+  "version": "2.0",
+  "id": "EXT-00",
+  "displayName": "EXT-00 · Alexanderplatz (0,00 m)",
+  "baseBackdropImage": "assets/stages/ext-00.jpg",
+  "tiledMapJson": null,
+  "renderSpace": {
+    "mode": "pre-rendered-stage",
+    "widthPx": 2048,
+    "heightPx": 1529,
+    "sourceImageWidthPx": 1024,
+    "sourceImageHeightPx": 765,
+    "imageScaleX": 2.0,
+    "imageScaleY": 1.9986928104575163,
+    "coordinateSpace": "stage-pixel"
+  },
+  "worldBoundsMeters": {
+    "width": 300,
+    "height": 180
+  },
+  "grid": {
+    "macroCols": 30,
+    "macroRows": 18,
+    "macroTileMeters": 10,
+    "subGridDivisions": 20,
+    "projection": "legacy-stage-calibrated",
+    "tilePixelWidth": 256,
+    "tilePixelHeight": 128,
+    "elevationPxPerTier": 96,
+    "originX": 1024,
+    "originY": 0,
+    "note": "Die Stage-Koordinaten stammen aus V0.3. Diese nominalen Blueprint-Werte werden nicht auf das vorgerenderte Bild angewendet."
+  },
+  "display": {
+    "levelLabel": "L0",
+    "zMeters": 0.0,
+    "scale": 0.62
+  },
+  "spawn": {
+    "xPx": 820,
+    "yPx": 820
+  },
+  "tiers": [
+    {
+      "id": 0,
+      "name": "EXT-00 · Alexanderplatz (0,00 m)",
+      "zMeters": 0.0,
+      "ambientColor": "#0b1120",
+      "audioFilterCutoffHz": 20000,
+      "walkablePolygonLayer": "walkable_tier_0"
+    }
+  ],
+  "navmeshData": "data/navmeshes/EXT-00.json",
+  "foregroundSlices": [],
+  "source": {
+    "origin": "KLEIN BERLIN V0.3 embedded APP_DATA",
+    "geometryStatus": "legacy-reference-data",
+    "stageImageSourceResolution": "1024x765",
+    "renderedStageResolution": "2048x1529"
+  },
+  "worldMapping": {
+    "type": "linear-rect",
+    "xOriginPx": 150,
+    "xSpanPx": 1750,
+    "xMeters": 300,
+    "yOriginPx": 100,
+    "ySpanPx": 1350,
+    "yMeters": 180
+  }
+}

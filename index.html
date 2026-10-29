@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>KLEIN BERLIN — Hybrid Engine V1.6</title>
+  </head>
+  <body>
+    <div id="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="version-chip">ENGINE V1.6</span>
+          <div class="brand-title">KLEIN BERLIN <span>· Hybrid Engine</span></div>
+        </div>
+        <nav id="scene-buttons" class="scene-buttons" aria-label="Szenen und Ebenen"></nav>
+        <div class="top-actions">
+          <button id="btn-debug" class="tool-button" type="button" aria-pressed="true">Geometrie AN</button>
+          <button id="btn-hotspots" class="tool-button" type="button" aria-pressed="true">Hotspots AN</button>
+          <button id="btn-cutaway" class="tool-button" type="button" aria-pressed="true">Cutaway AN</button>
+          <button id="btn-center-camera" class="tool-button" type="button">Zentrieren</button>
+          <a id="btn-open-world-preview" class="tool-button tool-link" href="?view=world">World Model</a>
+        </div>
+      </header>
+
+      <section id="world-editor-panel" class="world-editor-panel hidden" aria-label="World-Model-Bearbeitungswerkzeuge">
+        <div class="editor-toolbar-group">
+          <span class="editor-toolbar-label">Werkzeug</span>
+          <button type="button" class="editor-tool active" data-editor-tool="select" aria-pressed="true">Auswahl</button>
+          <button type="button" class="editor-tool" data-editor-tool="road" aria-pressed="false">Straße</button>
+          <button type="button" class="editor-tool" data-editor-tool="area" aria-pressed="false">Fläche</button>
+          <button type="button" class="editor-tool" data-editor-tool="building" aria-pressed="false">Gebäude</button>
+          <button type="button" class="editor-tool" data-editor-tool="asset" aria-pressed="false">Requisite</button>
+        </div>
+
+        <label class="editor-select-label" id="label-road-profile">Straßenprofil
+          <select id="world-road-profile">
+            <option value="primary">Hauptstraße (24 m)</option>
+            <option value="secondary" selected>Nebenstraße (16 m)</option>
+            <option value="residential">Wohnstraße / Kiez (10 m)</option>
+            <option value="pedestrian">Fußgängerzone (8 m)</option>
+          </select>
+        </label>
+
+        <label class="editor-select-label" id="label-area-kind">Flächentyp
+          <select id="world-area-kind">
+            <option value="park">Park / Grünfläche</option>
+            <option value="plaza">Platz</option>
+            <option value="parcel">Grundstück</option>
+            <option value="walkable-area">Begehbare Fläche</option>
+            <option value="collision-area">Kollisionsfläche</option>
+          </select>
+        </label>
+
+        <label class="editor-select-label" id="label-asset-select">Katalog-Asset
+          <select id="world-asset-kind">
+            <option value="bench-wood">Kiez-Holzbank</option>
+            <option value="ticket-red">BVG Ticketautomat</option>
+            <option value="info-rondell">DB Info-Rondell</option>
+            <option value="depboard">Abfahrtstafel</option>
+            <option value="glass-lift">Glasaufzug</option>
+            <option value="facade-wall">Gründerzeit-Fassade</option>
+          </select>
+        </label>
+
+        <div class="editor-toolbar-group editor-toolbar-actions">
+          <span id="world-selection-badge" class="selection-badge hidden">Auswahl: —</span>
+          <button type="button" id="btn-world-rotate" class="tool-button hidden" title="Ausgewählte Requisite drehen (R)">Drehen 90°</button>
+          <button type="button" id="btn-world-delete" class="tool-button btn-danger hidden" title="Ausgewähltes Objekt löschen (Entf)">Löschen</button>
+          <button type="button" id="btn-ref-toggle" class="tool-button" title="Referenzbild-Vorlage ein-/ausblenden">Vorlage AN</button>
+          <button type="button" id="btn-world-undo" class="tool-button">Rückgängig</button>
+          <input type="file" id="file-world-import" accept=".json" class="hidden" />
+          <button type="button" id="btn-world-import" class="tool-button" title="Draft-JSON laden oder per Drag & Drop ablegen">JSON laden</button>
+          <button type="button" id="btn-world-export" class="tool-button">JSON exportieren</button>
+        </div>
+        <div id="world-editor-hint" class="editor-hint">Wähle ein Werkzeug, um die Weltkarte zu bearbeiten.</div>
+      </section>
+
+      <main id="game-root" aria-label="Spielansicht"></main>
+
+      <section class="telemetry" aria-live="polite">
+        <div id="active-scene-label" class="telemetry-title">Szene wird geladen …</div>
+        <div id="status-line" class="status-line">Initialisierung der manifest-gesteuerten Laufzeit.</div>
+        <div class="telemetry-meta"><span id="position-line">Position: —</span><span id="engine-mode">Modus: Stage-Pixel / NavMesh getrennt</span></div>
+      </section>
+
+      <section class="touch-controls" aria-label="Touch-Steuerung">
+        <div class="dpad" role="group" aria-label="Richtungstasten">
+          <button type="button" data-dir="NW" aria-label="Nordwest">↖</button>
+          <button type="button" data-dir="N" aria-label="Nord">↑</button>
+          <button type="button" data-dir="NE" aria-label="Nordost">↗</button>
+          <button type="button" data-dir="W" aria-label="West">←</button>
+          <span class="dpad-center">KB</span>
+          <button type="button" data-dir="E" aria-label="Ost">→</button>
+          <button type="button" data-dir="SW" aria-label="Südwest">↙</button>
+          <button type="button" data-dir="S" aria-label="Süd">↓</button>
+          <button type="button" data-dir="SE" aria-label="Südost">↘</button>
+        </div>
+        <div class="action-controls">
+          <button id="btn-interact" type="button" class="action-button"><span> E </span><small>Interaktion</small></button>
+          <div class="zoom-controls">
+            <button id="btn-zoom-in" type="button" aria-label="Vergrößern">＋</button>
+            <button id="btn-zoom-out" type="button" aria-label="Verkleinern">−</button>
+          </div>
+        </div>
+      </section>
+
+      <div id="interaction-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="interaction-title">
+        <div class="interaction-card">
+          <div class="interaction-head"><span id="interaction-kind">INTERAKTION</span><button id="btn-close-interaction" type="button" aria-label="Schließen">×</button></div>
+          <h2 id="interaction-title">Objekt</h2>
+          <p id="interaction-description"></p>
+          <div id="interaction-actions" class="interaction-actions"></div>
+        </div>
+      </div>
+
+      <div id="loading-error" class="loading-error hidden" role="alert"></div>
+      <footer class="footer-note">WASD / Pfeiltasten bewegen · Klick/Tap setzt ein Wegziel · E interagiert · TAB Geometrie</footer>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

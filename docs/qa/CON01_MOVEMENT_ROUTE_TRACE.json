@@ -1,0 +1,479 @@
+{
+  "schemaVersion": "1.0",
+  "purpose": "Deterministic movement-path QA snapshot; coordinates stay in calibrated Stage pixels.",
+  "sceneId": "CON-01",
+  "referenceImage": "public/assets/stages/con-01.jpg",
+  "referenceImageSize": [
+    1024,
+    765
+  ],
+  "stageSize": [
+    2048,
+    1529
+  ],
+  "imageScale": [
+    2,
+    1.9986928104575163
+  ],
+  "agentRadiusStagePx": 12.5,
+  "spawnStagePx": [
+    690,
+    845
+  ],
+  "walkablePolygons": [
+    {
+      "id": "CON-01-WALK-MAIN-NW",
+      "name": "Westliche Haupthalle (zwischen Glasgiebel und Info-Rondell)",
+      "pointsStagePx": [
+        [
+          140,
+          815.00097124183
+        ],
+        [
+          715,
+          455.0004196078431
+        ],
+        [
+          965,
+          584.9993973856209
+        ],
+        [
+          665,
+          764.9996732026143
+        ],
+        [
+          415,
+          924.9990300653594
+        ]
+      ]
+    },
+    {
+      "id": "CON-01-WALK-NORTH-ARCADE",
+      "name": "Nördliche Ladenpassage vor Bäckerei & Kiosk",
+      "pointsStagePx": [
+        [
+          730,
+          595.0008562091504
+        ],
+        [
+          965,
+          584.9993973856209
+        ],
+        [
+          1485,
+          844.9993516339869
+        ],
+        [
+          1220,
+          914.9995699346405
+        ],
+        [
+          1060,
+          730.0005633986927
+        ],
+        [
+          810,
+          679.9992653594771
+        ]
+      ]
+    },
+    {
+      "id": "CON-01-WALK-CENTRAL-WEST",
+      "name": "Zentraler Durchgang zwischen Westpfeiler, Info-Rondell und U-Bahn-Schacht",
+      "pointsStagePx": [
+        [
+          645,
+          774.9991333333334
+        ],
+        [
+          810,
+          679.9992653594771
+        ],
+        [
+          990,
+          774.9991333333334
+        ],
+        [
+          850,
+          865.0002705882353
+        ],
+        [
+          1130,
+          1034.9990875816993
+        ],
+        [
+          1020,
+          1110.0000352941177
+        ],
+        [
+          645,
+          905.0001098039215
+        ]
+      ]
+    },
+    {
+      "id": "CON-01-WALK-SOUTH-PROMENADE",
+      "name": "Südliche Hallenpromenade vor den roten Fahrkartenautomaten bis zum Aufzug/Ostportal",
+      "pointsStagePx": [
+        [
+          1020,
+          1110.0000352941177
+        ],
+        [
+          1130,
+          1034.9990875816993
+        ],
+        [
+          1445,
+          1185.000983006536
+        ],
+        [
+          1565,
+          1085.000385620915
+        ],
+        [
+          1740,
+          1165.0000640522876
+        ],
+        [
+          1235,
+          1445.0009372549018
+        ],
+        [
+          960,
+          1294.9990418300654
+        ]
+      ]
+    },
+    {
+      "id": "CON-01-WALK-EAST-CONCOURSE",
+      "name": "Östlicher Hallenbereich vor Aufzug, Rolltreppen und Snack-Bogen",
+      "pointsStagePx": [
+        [
+          1220,
+          914.9995699346406
+        ],
+        [
+          1485,
+          844.999351633987
+        ],
+        [
+          1935,
+          1034.9990875816993
+        ],
+        [
+          1740,
+          1165.0000640522876
+        ],
+        [
+          1565,
+          1085.000385620915
+        ],
+        [
+          1445,
+          1185.000983006536
+        ]
+      ]
+    },
+    {
+      "id": "CON-01-WALK-VESTIBULE-SW",
+      "name": "Südwestliche Vorhalle (Vestibül mit Sitzbänken und Westeingang)",
+      "pointsStagePx": [
+        [
+          220,
+          1045.0005464052288
+        ],
+        [
+          475,
+          920.0002993464052
+        ],
+        [
+          685,
+          1034.9990875816993
+        ],
+        [
+          525,
+          1265.0006614379085
+        ]
+      ]
+    }
+  ],
+  "collisionPolygons": [
+    {
+      "id": "OBS-CON-INFO",
+      "name": "DB Info-Rondell",
+      "pointsStagePx": [
+        [
+          675,
+          679.9992653594771
+        ],
+        [
+          740,
+          645.0001555555556
+        ],
+        [
+          805,
+          679.9992653594771
+        ],
+        [
+          805,
+          734.9992941176471
+        ],
+        [
+          740,
+          764.9996732026144
+        ],
+        [
+          675,
+          734.9992941176471
+        ]
+      ]
+    },
+    {
+      "id": "OBS-CON-DEPBOARD",
+      "name": "Abfahrtstafel & Wartebank",
+      "pointsStagePx": [
+        [
+          800,
+          715.0003738562092
+        ],
+        [
+          975,
+          629.9999660130719
+        ],
+        [
+          995,
+          654.9996156862745
+        ],
+        [
+          820,
+          745.0007529411765
+        ]
+      ]
+    },
+    {
+      "id": "OBS-CON-PIER-W",
+      "name": "Klinker-Stützpfeiler West",
+      "pointsStagePx": [
+        [
+          540,
+          829.9991620915032
+        ],
+        [
+          590,
+          800.0007816993464
+        ],
+        [
+          635,
+          829.9991620915032
+        ],
+        [
+          590,
+          865.0002705882353
+        ]
+      ]
+    },
+    {
+      "id": "OBS-CON-PIER-N",
+      "name": "Klinker-Stützpfeiler Nord",
+      "pointsStagePx": [
+        [
+          970,
+          569.9992078431372
+        ],
+        [
+          1015,
+          544.9995581699346
+        ],
+        [
+          1060,
+          569.9992078431372
+        ],
+        [
+          1015,
+          599.9995869281046
+        ]
+      ]
+    },
+    {
+      "id": "OBS-CON-VOID",
+      "name": "Deckendurchbruch U-Bahn-Abgang (Brüstung)",
+      "pointsStagePx": [
+        [
+          895,
+          865.0002705882354
+        ],
+        [
+          1060,
+          745.0007529411765
+        ],
+        [
+          1275,
+          865.0002705882354
+        ],
+        [
+          1085,
+          994.9992483660131
+        ]
+      ]
+    },
+    {
+      "id": "OBS-CON-MACHINES",
+      "name": "Rote Fahrkartenautomaten-Reihe",
+      "pointsStagePx": [
+        [
+          1145,
+          1020.0008967320261
+        ],
+        [
+          1185,
+          990.0005176470588
+        ],
+        [
+          1430,
+          1130.000954248366
+        ],
+        [
+          1395,
+          1165.0000640522876
+        ]
+      ]
+    },
+    {
+      "id": "OBS-CON-BENCH-W",
+      "name": "Wartebank West",
+      "pointsStagePx": [
+        [
+          320,
+          810.0002418300653
+        ],
+        [
+          355,
+          789.9993228758169
+        ],
+        [
+          415,
+          834.9998915032679
+        ],
+        [
+          380,
+          855.0008104575163
+        ]
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "INT-CON-INFO",
+      "name": "DB Information (Rondell)",
+      "targetStagePx": [
+        735,
+        745.0007529411765
+      ],
+      "routeStagePx": [
+        [
+          727.1060191243731,
+          774.4614906429931
+        ]
+      ],
+      "routeLengthStagePx": 79.7,
+      "safe": true
+    },
+    {
+      "id": "INT-CON-TICKETS",
+      "name": "Fahrkartenautomaten (Rot)",
+      "targetStagePx": [
+        1260,
+        1110.0000352941177
+      ],
+      "routeStagePx": [
+        [
+          1270.2530483272049,
+          1120.2530836213225
+        ]
+      ],
+      "routeLengthStagePx": 642.23,
+      "safe": true
+    },
+    {
+      "id": "INT-CON-BAKERY",
+      "name": "Bäckerei im Viaduktbogen",
+      "targetStagePx": [
+        1120,
+        645.0001555555556
+      ],
+      "routeStagePx": [
+        [
+          1443.75,
+          1206.25
+        ],
+        [
+          1456.25,
+          1181.25
+        ],
+        [
+          1443.75,
+          1106.25
+        ],
+        [
+          1256.25,
+          806.25
+        ],
+        [
+          1112.1060191243732,
+          674.4608932573722
+        ]
+      ],
+      "routeLengthStagePx": 1488.92,
+      "safe": true
+    },
+    {
+      "id": "INT-CON-KIOSK",
+      "name": "Kiosk im Viaduktbogen",
+      "targetStagePx": [
+        1310,
+        745.0007529411765
+      ],
+      "routeStagePx": [
+        [
+          1443.75,
+          1206.25
+        ],
+        [
+          1456.25,
+          1181.25
+        ],
+        [
+          1431.25,
+          1081.25
+        ],
+        [
+          1283.5862251845747,
+          760.2507529411765
+        ]
+      ],
+      "routeLengthStagePx": 1320.21,
+      "safe": true
+    },
+    {
+      "id": "INT-CON-DEPBOARD",
+      "name": "Elektronische Abfahrtstafel",
+      "targetStagePx": [
+        885,
+        764.9996732026144
+      ],
+      "routeStagePx": [
+        [
+          885,
+          764.9996732026144
+        ]
+      ],
+      "routeLengthStagePx": 210.77,
+      "safe": true
+    }
+  ],
+  "summary": {
+    "interactions": 5,
+    "safeRoutes": 5
+  }
+}

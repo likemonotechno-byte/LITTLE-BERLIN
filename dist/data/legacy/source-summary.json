@@ -1,0 +1,71 @@
+{
+  "source": "KLEIN BERLIN V0.3 embedded APP_DATA",
+  "sourceHtml": "legacy/v0.3-reference.html",
+  "stageIds": [
+    "CON-01",
+    "EXT-00",
+    "RAIL-02",
+    "UG-03"
+  ],
+  "stageImageSourceResolution": {
+    "CON-01": {
+      "width": 1024,
+      "height": 765
+    },
+    "EXT-00": {
+      "width": 1024,
+      "height": 765
+    },
+    "RAIL-02": {
+      "width": 1024,
+      "height": 765
+    },
+    "UG-03": {
+      "width": 1024,
+      "height": 765
+    }
+  },
+  "stageReferenceRenderResolution": {
+    "width": 2048,
+    "height": 1529
+  },
+  "playerSheet": {
+    "path": "assets/player/player_sheet.png",
+    "width": 256,
+    "height": 768,
+    "frameWidth": 64,
+    "frameHeight": 96,
+    "columns": 4,
+    "rows": 8
+  },
+  "foregroundSliceCount": 10,
+  "navmeshCounts": {
+    "CON-01": {
+      "walkablePolygons": 6,
+      "collisionPolygons": 7,
+      "connectorZones": 7,
+      "interactionZones": 5
+    },
+    "EXT-00": {
+      "walkablePolygons": 2,
+      "collisionPolygons": 2,
+      "connectorZones": 3,
+      "interactionZones": 2
+    },
+    "RAIL-02": {
+      "walkablePolygons": 1,
+      "collisionPolygons": 3,
+      "connectorZones": 3,
+      "interactionZones": 1
+    },
+    "UG-03": {
+      "walkablePolygons": 1,
+      "collisionPolygons": 2,
+      "connectorZones": 4,
+      "interactionZones": 1
+    }
+  },
+  "globalConnectorRegisterCount": 17,
+  "assetRegisterCount": 23,
+  "caveat": "V0.3 geometry includes estimated and derived values; see measurement_status in the source asset and connector registers."
+}

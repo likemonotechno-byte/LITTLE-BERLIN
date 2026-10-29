@@ -1,0 +1,48 @@
+{
+  "version": "2.0",
+  "id": "TILED-NAV-DEMO",
+  "displayName": "Tiled Navigation Demo",
+  "baseBackdropImage": null,
+  "tiledMapJson": "data/maps/examples/isometric-diamond-demo.json",
+  "renderSpace": {
+    "mode": "projected-world",
+    "widthPx": 896,
+    "heightPx": 448,
+    "coordinateSpace": "world-meter"
+  },
+  "worldBoundsMeters": { "width": 40, "height": 30 },
+  "worldMapping": null,
+  "grid": {
+    "macroCols": 4,
+    "macroRows": 3,
+    "macroTileMeters": 10,
+    "subGridDivisions": 20,
+    "projection": "dimetric-2-to-1",
+    "tilePixelWidth": 256,
+    "tilePixelHeight": 128,
+    "elevationPxPerTier": 96,
+    "originX": 448,
+    "originY": 0
+  },
+  "display": { "levelLabel": "DEMO · L0", "zMeters": 0, "scale": 1 },
+  "spawn": { "xPx": 384, "yPx": 256 },
+  "tiers": [
+    {
+      "id": 0,
+      "name": "Demoboden",
+      "zMeters": 0,
+      "ambientColor": "#0b1120",
+      "audioFilterCutoffHz": 20000,
+      "walkablePolygonLayer": "walkable_tier_0"
+    }
+  ],
+  "navmeshData": null,
+  "navigationSource": "tiled-object-layers",
+  "navigation": { "floorZ": 0, "agentRadiusPx": 18, "agentRadiusMeters": 0.35 },
+  "foregroundSlices": [],
+  "source": {
+    "kind": "engineering-smoke-test",
+    "productionScene": false,
+    "note": "Not registered in scene-index.json; isolated importer and navigation test scene."
+  }
+}

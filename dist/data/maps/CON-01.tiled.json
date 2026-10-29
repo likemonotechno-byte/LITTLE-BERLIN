@@ -1,0 +1,1661 @@
+{
+  "type": "map",
+  "version": "1.10",
+  "tiledversion": "1.10.2",
+  "orientation": "isometric",
+  "renderorder": "right-down",
+  "width": 22,
+  "height": 26,
+  "tilewidth": 64,
+  "tileheight": 32,
+  "infinite": false,
+  "nextlayerid": 6,
+  "nextobjectid": 26,
+  "properties": [
+    {
+      "name": "kbMapRole",
+      "type": "string",
+      "value": "legacy-stage-navigation-overlay"
+    },
+    {
+      "name": "kbCoordinateSpace",
+      "type": "string",
+      "value": "source-image-pixels"
+    },
+    {
+      "name": "kbSceneId",
+      "type": "string",
+      "value": "CON-01"
+    },
+    {
+      "name": "kbSourceImage",
+      "type": "string",
+      "value": "assets/stages/con-01.jpg"
+    },
+    {
+      "name": "kbRuntimeScaleX",
+      "type": "float",
+      "value": 2
+    },
+    {
+      "name": "kbRuntimeScaleY",
+      "type": "float",
+      "value": 1.9986928104575163
+    },
+    {
+      "name": "kbRuntimeWidthPx",
+      "type": "float",
+      "value": 2048
+    },
+    {
+      "name": "kbRuntimeHeightPx",
+      "type": "float",
+      "value": 1529
+    },
+    {
+      "name": "kbWorldMapping",
+      "type": "string",
+      "value": "legacy-stage-calibrated; Tiled object coordinates are scaled back to stage pixels by the scene manifest."
+    },
+    {
+      "name": "kbMacroCols",
+      "type": "float",
+      "value": 22
+    },
+    {
+      "name": "kbMacroRows",
+      "type": "float",
+      "value": 8
+    },
+    {
+      "name": "kbMacroTileMeters",
+      "type": "float",
+      "value": 10
+    }
+  ],
+  "layers": [
+    {
+      "id": 1,
+      "name": "Background reference (not rendered by engine)",
+      "type": "imagelayer",
+      "image": "../../assets/stages/con-01.jpg",
+      "imagewidth": 1024,
+      "imageheight": 765,
+      "x": 0,
+      "y": 0,
+      "offsetx": 0,
+      "offsety": 0,
+      "visible": true,
+      "opacity": 1,
+      "repeatx": false,
+      "repeaty": false
+    },
+    {
+      "id": 2,
+      "name": "walkable_tier_0",
+      "type": "objectgroup",
+      "draworder": "topdown",
+      "visible": true,
+      "opacity": 0.45,
+      "color": "#22c55e",
+      "objects": [
+        {
+          "id": 1,
+          "name": "Westliche Haupthalle (zwischen Glasgiebel und Info-Rondell)",
+          "type": "walkable",
+          "class": "walkable",
+          "x": 70,
+          "y": 227.649,
+          "width": 412.5,
+          "height": 235.153,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 180.118
+            },
+            {
+              "x": 287.5,
+              "y": 0
+            },
+            {
+              "x": 412.5,
+              "y": 65.042
+            },
+            {
+              "x": 262.5,
+              "y": 155.101
+            },
+            {
+              "x": 137.5,
+              "y": 235.153
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "walkable"
+            },
+            {
+              "name": "polygonId",
+              "type": "string",
+              "value": "CON-01-WALK-MAIN-NW"
+            },
+            {
+              "name": "allowed",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "speedModifier",
+              "type": "float",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Nördliche Ladenpassage vor Bäckerei & Kiosk",
+          "type": "walkable",
+          "class": "walkable",
+          "x": 365,
+          "y": 292.691,
+          "width": 377.5,
+          "height": 165.108,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 5.004
+            },
+            {
+              "x": 117.5,
+              "y": 0
+            },
+            {
+              "x": 377.5,
+              "y": 130.085
+            },
+            {
+              "x": 245,
+              "y": 165.108
+            },
+            {
+              "x": 165,
+              "y": 72.548
+            },
+            {
+              "x": 40,
+              "y": 47.531
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "walkable"
+            },
+            {
+              "name": "polygonId",
+              "type": "string",
+              "value": "CON-01-WALK-NORTH-ARCADE"
+            },
+            {
+              "name": "allowed",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "speedModifier",
+              "type": "float",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Zentraler Durchgang zwischen Westpfeiler, Info-Rondell und U-Bahn-Schacht",
+          "type": "walkable",
+          "class": "walkable",
+          "x": 322.5,
+          "y": 340.222,
+          "width": 242.5,
+          "height": 215.141,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 47.531
+            },
+            {
+              "x": 82.5,
+              "y": 0
+            },
+            {
+              "x": 172.5,
+              "y": 47.531
+            },
+            {
+              "x": 102.5,
+              "y": 92.561
+            },
+            {
+              "x": 242.5,
+              "y": 177.616
+            },
+            {
+              "x": 187.5,
+              "y": 215.141
+            },
+            {
+              "x": 0,
+              "y": 112.574
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "walkable"
+            },
+            {
+              "name": "polygonId",
+              "type": "string",
+              "value": "CON-01-WALK-CENTRAL-WEST"
+            },
+            {
+              "name": "allowed",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "speedModifier",
+              "type": "float",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Südliche Hallenpromenade vor den roten Fahrkartenautomaten bis zum Aufzug/Ostportal",
+          "type": "walkable",
+          "class": "walkable",
+          "x": 480,
+          "y": 517.838,
+          "width": 390,
+          "height": 205.135,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 30,
+              "y": 37.525
+            },
+            {
+              "x": 85,
+              "y": 0
+            },
+            {
+              "x": 242.5,
+              "y": 75.05
+            },
+            {
+              "x": 302.5,
+              "y": 25.017
+            },
+            {
+              "x": 390,
+              "y": 65.043
+            },
+            {
+              "x": 137.5,
+              "y": 205.135
+            },
+            {
+              "x": 0,
+              "y": 130.085
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "walkable"
+            },
+            {
+              "name": "polygonId",
+              "type": "string",
+              "value": "CON-01-WALK-SOUTH-PROMENADE"
+            },
+            {
+              "name": "allowed",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "speedModifier",
+              "type": "float",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Östlicher Hallenbereich vor Aufzug, Rolltreppen und Snack-Bogen",
+          "type": "walkable",
+          "class": "walkable",
+          "x": 610,
+          "y": 422.776,
+          "width": 357.5,
+          "height": 170.112,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 35.023
+            },
+            {
+              "x": 132.5,
+              "y": 0
+            },
+            {
+              "x": 357.5,
+              "y": 95.062
+            },
+            {
+              "x": 260,
+              "y": 160.105
+            },
+            {
+              "x": 172.5,
+              "y": 120.079
+            },
+            {
+              "x": 112.5,
+              "y": 170.112
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "walkable"
+            },
+            {
+              "name": "polygonId",
+              "type": "string",
+              "value": "CON-01-WALK-EAST-CONCOURSE"
+            },
+            {
+              "name": "allowed",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "speedModifier",
+              "type": "float",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Südwestliche Vorhalle (Vestibül mit Sitzbänken und Westeingang)",
+          "type": "walkable",
+          "class": "walkable",
+          "x": 110,
+          "y": 460.301,
+          "width": 232.5,
+          "height": 172.613,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 62.541
+            },
+            {
+              "x": 127.5,
+              "y": 0
+            },
+            {
+              "x": 232.5,
+              "y": 57.537
+            },
+            {
+              "x": 152.5,
+              "y": 172.613
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "walkable"
+            },
+            {
+              "name": "polygonId",
+              "type": "string",
+              "value": "CON-01-WALK-VESTIBULE-SW"
+            },
+            {
+              "name": "allowed",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "speedModifier",
+              "type": "float",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "collision_tier_0",
+      "type": "objectgroup",
+      "draworder": "topdown",
+      "visible": true,
+      "opacity": 0.65,
+      "color": "#ef4444",
+      "objects": [
+        {
+          "id": 7,
+          "name": "DB Info-Rondell",
+          "type": "collision",
+          "class": "collision",
+          "x": 337.5,
+          "y": 322.711,
+          "width": 65,
+          "height": 60.039,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 17.511
+            },
+            {
+              "x": 32.5,
+              "y": 0
+            },
+            {
+              "x": 65,
+              "y": 17.511
+            },
+            {
+              "x": 65,
+              "y": 45.029
+            },
+            {
+              "x": 32.5,
+              "y": 60.039
+            },
+            {
+              "x": 0,
+              "y": 45.029
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-INFO"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 4.2
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Abfahrtstafel & Wartebank",
+          "type": "collision",
+          "class": "collision",
+          "x": 400,
+          "y": 315.206,
+          "width": 97.5,
+          "height": 57.538,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 42.528
+            },
+            {
+              "x": 87.5,
+              "y": 0
+            },
+            {
+              "x": 97.5,
+              "y": 12.508
+            },
+            {
+              "x": 10,
+              "y": 57.538
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-DEPBOARD"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 3.8
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Klinker-Stützpfeiler West",
+          "type": "collision",
+          "class": "collision",
+          "x": 270,
+          "y": 400.262,
+          "width": 47.5,
+          "height": 32.521,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 15.009
+            },
+            {
+              "x": 25,
+              "y": 0
+            },
+            {
+              "x": 47.5,
+              "y": 15.009
+            },
+            {
+              "x": 25,
+              "y": 32.521
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-PIER-W"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 7.5
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Klinker-Stützpfeiler Nord",
+          "type": "collision",
+          "class": "collision",
+          "x": 485,
+          "y": 272.678,
+          "width": 45,
+          "height": 27.518,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 12.508
+            },
+            {
+              "x": 22.5,
+              "y": 0
+            },
+            {
+              "x": 45,
+              "y": 12.508
+            },
+            {
+              "x": 22.5,
+              "y": 27.518
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-PIER-N"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 7.5
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Deckendurchbruch U-Bahn-Abgang (Brüstung)",
+          "type": "collision",
+          "class": "collision",
+          "x": 447.5,
+          "y": 372.744,
+          "width": 190,
+          "height": 125.081,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 60.039
+            },
+            {
+              "x": 82.5,
+              "y": 0
+            },
+            {
+              "x": 190,
+              "y": 60.039
+            },
+            {
+              "x": 95,
+              "y": 125.081
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-VOID"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 1.2
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Rote Fahrkartenautomaten-Reihe",
+          "type": "collision",
+          "class": "collision",
+          "x": 572.5,
+          "y": 495.324,
+          "width": 142.5,
+          "height": 87.557,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 15.01
+            },
+            {
+              "x": 20,
+              "y": 0
+            },
+            {
+              "x": 142.5,
+              "y": 70.046
+            },
+            {
+              "x": 125,
+              "y": 87.557
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-MACHINES"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 2.1
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "Wartebank West",
+          "type": "collision",
+          "class": "collision",
+          "x": 160,
+          "y": 395.258,
+          "width": 47.5,
+          "height": 32.522,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 10.007
+            },
+            {
+              "x": 17.5,
+              "y": 0
+            },
+            {
+              "x": 47.5,
+              "y": 22.515
+            },
+            {
+              "x": 30,
+              "y": 32.522
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "collision"
+            },
+            {
+              "name": "obstacleId",
+              "type": "string",
+              "value": "OBS-CON-BENCH-W"
+            },
+            {
+              "name": "floorZ",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "heightMeters",
+              "type": "float",
+              "value": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "connectors_tier_0",
+      "type": "objectgroup",
+      "draworder": "topdown",
+      "visible": true,
+      "opacity": 0.65,
+      "color": "#38bdf8",
+      "objects": [
+        {
+          "id": 14,
+          "name": "Treppe 'U-Bahn ↓' nach UG-03 (L-1)",
+          "type": "connector",
+          "class": "connector",
+          "x": 427.5,
+          "y": 397.76,
+          "width": 80,
+          "height": 50.033,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 25.016
+            },
+            {
+              "x": 45,
+              "y": 0
+            },
+            {
+              "x": 80,
+              "y": 22.515
+            },
+            {
+              "x": 35,
+              "y": 50.033
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-ST-B1"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "VC-ST-B1"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "stairs"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "UG-03"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L-1"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Treppe 'U-Bahn ↓' nach UG-03 (L-1)"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": -4.5
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "name": "Doppel-Rolltreppe nach RAIL-02 (L+1 Bahnsteig)",
+          "type": "connector",
+          "class": "connector",
+          "x": 617.5,
+          "y": 387.753,
+          "width": 125,
+          "height": 100.066,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 70.046
+            },
+            {
+              "x": 80,
+              "y": 0
+            },
+            {
+              "x": 125,
+              "y": 25.017
+            },
+            {
+              "x": 50,
+              "y": 100.066
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-ESC-A"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "VC-ESC-A"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "escalator"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "RAIL-02"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L+1"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Doppel-Rolltreppe nach RAIL-02 (L+1 Bahnsteig)"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": 8.26
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Glasaufzug VC-LIFT-01 (Direktwahl L+1 Bahnsteig / L0 Halle / L-1 U-Bahn)",
+          "type": "connector",
+          "class": "connector",
+          "x": 732.5,
+          "y": 467.806,
+          "width": 85,
+          "height": 55.036,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 22.514
+            },
+            {
+              "x": 50,
+              "y": 0
+            },
+            {
+              "x": 85,
+              "y": 25.016
+            },
+            {
+              "x": 40,
+              "y": 55.036
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-LIFT-01"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "VC-LIFT-01"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "elevator"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "RAIL-02"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L+1 / L-1"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Glasaufzug VC-LIFT-01 (Direktwahl L+1 Bahnsteig / L0 Halle / L-1 U-Bahn)"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": 8.46
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "Treppe zum Bahnsteig RAIL-02 (L+1)",
+          "type": "connector",
+          "class": "connector",
+          "x": 767.5,
+          "y": 432.783,
+          "width": 137.5,
+          "height": 120.078,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 95.062
+            },
+            {
+              "x": 95,
+              "y": 0
+            },
+            {
+              "x": 137.5,
+              "y": 20.013
+            },
+            {
+              "x": 37.5,
+              "y": 120.078
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-ST-A"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "VC-ST-A"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "stairs"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "RAIL-02"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L+1"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Treppe zum Bahnsteig RAIL-02 (L+1)"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": 8.46
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "Westportal zum Bahnhofsvorplatz EXT-00 (Weltzeituhr / Brunnen)",
+          "type": "connector",
+          "class": "connector",
+          "x": 130,
+          "y": 247.662,
+          "width": 127.5,
+          "height": 77.551,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 57.537
+            },
+            {
+              "x": 97.5,
+              "y": 0
+            },
+            {
+              "x": 127.5,
+              "y": 20.013
+            },
+            {
+              "x": 30,
+              "y": 77.551
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-PORTAL-W1"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "HC-PORTAL-W1"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "portal"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "EXT-00"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L0"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Westportal zum Bahnhofsvorplatz EXT-00 (Weltzeituhr / Brunnen)"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "Südwesteingang zum Vorplatz EXT-00",
+          "type": "connector",
+          "class": "connector",
+          "x": 227.5,
+          "y": 585.383,
+          "width": 65,
+          "height": 62.54,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 22.514
+            },
+            {
+              "x": 45,
+              "y": 0
+            },
+            {
+              "x": 65,
+              "y": 37.524
+            },
+            {
+              "x": 20,
+              "y": 62.54
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-PORTAL-W2"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "HC-PORTAL-W2"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "portal"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "EXT-00"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L0"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Südwesteingang zum Vorplatz EXT-00"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "Südosteingang Richtung Dircksen-/Gontardstraße (EXT-00)",
+          "type": "connector",
+          "class": "connector",
+          "x": 747.5,
+          "y": 575.376,
+          "width": 85,
+          "height": 65.043,
+          "rotation": 0,
+          "visible": true,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 32.521
+            },
+            {
+              "x": 57.5,
+              "y": 0
+            },
+            {
+              "x": 85,
+              "y": 32.521
+            },
+            {
+              "x": 27.5,
+              "y": 65.043
+            }
+          ],
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "connector"
+            },
+            {
+              "name": "zoneId",
+              "type": "string",
+              "value": "CON-01-CONN-PORTAL-E2"
+            },
+            {
+              "name": "connectorId",
+              "type": "string",
+              "value": "HC-PORTAL-E2"
+            },
+            {
+              "name": "connectorType",
+              "type": "string",
+              "value": "portal"
+            },
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "EXT-00"
+            },
+            {
+              "name": "targetLevel",
+              "type": "string",
+              "value": "L0"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Südosteingang Richtung Dircksen-/Gontardstraße (EXT-00)"
+            },
+            {
+              "name": "zFrom",
+              "type": "float",
+              "value": 0
+            },
+            {
+              "name": "zTo",
+              "type": "float",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "interactions_tier_0",
+      "type": "objectgroup",
+      "draworder": "topdown",
+      "visible": true,
+      "opacity": 0.65,
+      "color": "#f59e0b",
+      "objects": [
+        {
+          "id": 21,
+          "name": "DB Information (Rondell)",
+          "type": "interaction",
+          "class": "interaction",
+          "x": 367.5,
+          "y": 372.744,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "point": true,
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "interaction"
+            },
+            {
+              "name": "interactionId",
+              "type": "string",
+              "value": "INT-CON-INFO"
+            },
+            {
+              "name": "radiusPx",
+              "type": "float",
+              "value": 75
+            },
+            {
+              "name": "interactionType",
+              "type": "string",
+              "value": "npc-dialogue"
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "value": "DB Information — Auskunftsschalter"
+            },
+            {
+              "name": "description",
+              "type": "string",
+              "value": "Rundes Informations-Terminal in der Hallenmitte. Hier laufen alle Fäden über Zugankünfte, Fundsachen und den Schichtplan der Station zusammen."
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "Fahrkartenautomaten (Rot)",
+          "type": "interaction",
+          "class": "interaction",
+          "x": 630,
+          "y": 555.363,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "point": true,
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "interaction"
+            },
+            {
+              "name": "interactionId",
+              "type": "string",
+              "value": "INT-CON-TICKETS"
+            },
+            {
+              "name": "radiusPx",
+              "type": "float",
+              "value": 85
+            },
+            {
+              "name": "interactionType",
+              "type": "string",
+              "value": "minigame"
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "value": "DB / VBB Fahrkartenautomat"
+            },
+            {
+              "name": "description",
+              "type": "string",
+              "value": "Fünf rote Automaten vor dem U-Bahn-Abgang. Hier kann ein gültiger Fahrschein AB für die U-Bahn-Sperren (UG-03) und die S-Bahn (RAIL-02) gelöst werden."
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "Bäckerei im Viaduktbogen",
+          "type": "interaction",
+          "class": "interaction",
+          "x": 560,
+          "y": 322.711,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "point": true,
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "interaction"
+            },
+            {
+              "name": "interactionId",
+              "type": "string",
+              "value": "INT-CON-BAKERY"
+            },
+            {
+              "name": "radiusPx",
+              "type": "float",
+              "value": 75
+            },
+            {
+              "name": "interactionType",
+              "type": "string",
+              "value": "shop"
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "value": "Bahnhofsbäckerei (Stadtbahnbogen)"
+            },
+            {
+              "name": "description",
+              "type": "string",
+              "value": "Warmer Duft nach Schrippen und Filterkaffee aus dem gemauerten Backsteinbogen. Ein heißer Kaffee öffnet so manche Tür beim Wachpersonal."
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "Kiosk im Viaduktbogen",
+          "type": "interaction",
+          "class": "interaction",
+          "x": 655,
+          "y": 372.744,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "point": true,
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "interaction"
+            },
+            {
+              "name": "interactionId",
+              "type": "string",
+              "value": "INT-CON-KIOSK"
+            },
+            {
+              "name": "radiusPx",
+              "type": "float",
+              "value": 75
+            },
+            {
+              "name": "interactionType",
+              "type": "string",
+              "value": "shop"
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "value": "Reisekiosk & Presse"
+            },
+            {
+              "name": "description",
+              "type": "string",
+              "value": "Tageszeitungen, Stadtpläne und Fahrplanhefte im nördlichen Viaduktbogen direkt neben den Rolltreppen."
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "Elektronische Abfahrtstafel",
+          "type": "interaction",
+          "class": "interaction",
+          "x": 442.5,
+          "y": 382.75,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "point": true,
+          "properties": [
+            {
+              "name": "navigationRole",
+              "type": "string",
+              "value": "interaction"
+            },
+            {
+              "name": "interactionId",
+              "type": "string",
+              "value": "INT-CON-DEPBOARD"
+            },
+            {
+              "name": "radiusPx",
+              "type": "float",
+              "value": 70
+            },
+            {
+              "name": "interactionType",
+              "type": "string",
+              "value": "quest-item"
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "value": "Dynamischer Fahrgastinformationsanzeiger"
+            },
+            {
+              "name": "description",
+              "type": "string",
+              "value": "Gleis 1/2 (209 m): RE1 nach Frankfurt (Oder), FEX zum Flughafen BER | Gleis 3/4 (185 m): S5 Strausberg Nord, S7 Ahrensfelde, S9 Spandau."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tilesets": []
+}

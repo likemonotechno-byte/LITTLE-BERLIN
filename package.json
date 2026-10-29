@@ -1,0 +1,33 @@
+{
+  "name": "klein-berlin-engine",
+  "version": "1.6.0",
+  "private": true,
+  "description": "KLEIN BERLIN Hybrid Engine: modular isometric world model, asset stamp placement, reference image calibration, vertex editing, Berlin road profiles, physical road synthesis, draft import/export, preview renderer and validation QA",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "validate": "node --experimental-strip-types scripts/validate-project.mjs && node scripts/validate-source-graph.mjs && node --experimental-strip-types scripts/validate-world-project.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run validate && npm run typecheck && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "rebuild:con01-overlay": "node scripts/generate-con01-tiled-map.mjs",
+    "typecheck:navigation": "tsc -p tsconfig.navigation.json",
+    "qa:movement": "node --experimental-strip-types scripts/generate-movement-qa-trace.mjs",
+    "qa:browser": "node scripts/browser-smoke.mjs",
+    "release-check": "node scripts/release-check.mjs",
+    "apply-draft": "node scripts/apply-draft.mjs",
+    "validate:imports": "node scripts/validate-source-graph.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
+  },
+  "engines": {
+    "node": ">=22.6.0",
+    "npm": ">=10.9.0"
+  }
+}

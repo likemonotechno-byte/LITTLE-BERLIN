@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "project": "KLEIN BERLIN",
+  "scenes": [
+    {
+      "id": "CON-01",
+      "manifest": "data/scenes/CON-01.manifest.json"
+    },
+    {
+      "id": "EXT-00",
+      "manifest": "data/scenes/EXT-00.manifest.json"
+    },
+    {
+      "id": "RAIL-02",
+      "manifest": "data/scenes/RAIL-02.manifest.json"
+    },
+    {
+      "id": "UG-03",
+      "manifest": "data/scenes/UG-03.manifest.json"
+    }
+  ],
+  "defaultScene": "CON-01",
+  "sharedAssets": {
+    "playerSheet": "assets/player/player_sheet.png",
+    "connectorRegister": "data/legacy/connector-register.json",
+    "assetRegister": "data/legacy/asset-register.json",
+    "traceRegister": "data/legacy/trace-register.json"
+  }
+}

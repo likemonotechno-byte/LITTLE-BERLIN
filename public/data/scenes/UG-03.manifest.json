@@ -1,0 +1,71 @@
+{
+  "version": "2.0",
+  "id": "UG-03",
+  "displayName": "UG-03 · Verteilerebene (-4,50 m)",
+  "baseBackdropImage": "assets/stages/ug-03.jpg",
+  "tiledMapJson": null,
+  "renderSpace": {
+    "mode": "pre-rendered-stage",
+    "widthPx": 2048,
+    "heightPx": 1529,
+    "sourceImageWidthPx": 1024,
+    "sourceImageHeightPx": 765,
+    "imageScaleX": 2.0,
+    "imageScaleY": 1.9986928104575163,
+    "coordinateSpace": "stage-pixel"
+  },
+  "worldBoundsMeters": {
+    "width": 220,
+    "height": 80
+  },
+  "grid": {
+    "macroCols": 22,
+    "macroRows": 8,
+    "macroTileMeters": 10,
+    "subGridDivisions": 20,
+    "projection": "legacy-stage-calibrated",
+    "tilePixelWidth": 256,
+    "tilePixelHeight": 128,
+    "elevationPxPerTier": 96,
+    "originX": 1024,
+    "originY": 0,
+    "note": "Die Stage-Koordinaten stammen aus V0.3. Diese nominalen Blueprint-Werte werden nicht auf das vorgerenderte Bild angewendet."
+  },
+  "display": {
+    "levelLabel": "L-1",
+    "zMeters": -4.5,
+    "scale": 1.0
+  },
+  "spawn": {
+    "xPx": 1120,
+    "yPx": 1080
+  },
+  "tiers": [
+    {
+      "id": 0,
+      "name": "UG-03 · Verteilerebene (-4,50 m)",
+      "zMeters": -4.5,
+      "ambientColor": "#0b1120",
+      "audioFilterCutoffHz": 20000,
+      "walkablePolygonLayer": "walkable_tier_0"
+    }
+  ],
+  "navmeshData": "data/navmeshes/UG-03.json",
+  "foregroundSlices": [],
+  "source": {
+    "origin": "KLEIN BERLIN V0.3 embedded APP_DATA",
+    "geometryStatus": "legacy-reference-data",
+    "stageImageSourceResolution": "1024x765",
+    "renderedStageResolution": "2048x1529"
+  },
+  "worldMapping": {
+    "type": "legacy-dimetric",
+    "originXPx": 725,
+    "originYPx": 415,
+    "pixelPerMacroU": 66,
+    "pixelPerMacroV": 38,
+    "macroTileMeters": 10,
+    "maxXMeters": 219.9,
+    "maxYMeters": 79.9
+  }
+}

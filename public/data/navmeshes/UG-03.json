@@ -1,0 +1,257 @@
+{
+  "map_id": "UG-03",
+  "level_id": "L-1",
+  "floor_z": -4.5,
+  "agent_radius_px": 12.5,
+  "agent_radius_m": 0.4,
+  "walkable_polygons": [
+    {
+      "polygon_id": "UG-03-WALK-MAIN",
+      "name": "Unterirdische Verteilerebene (rund um BVG-Kundenzentrum & Automaten)",
+      "points_px": [
+        [
+          185,
+          1035
+        ],
+        [
+          1165,
+          485
+        ],
+        [
+          1885,
+          895
+        ],
+        [
+          1565,
+          1415
+        ],
+        [
+          865,
+          1445
+        ]
+      ],
+      "points_world_m": [
+        [
+          5,
+          10
+        ],
+        [
+          210,
+          10
+        ],
+        [
+          210,
+          70
+        ],
+        [
+          5,
+          70
+        ]
+      ],
+      "floor_z": -4.5,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": []
+    }
+  ],
+  "collision_polygons": [
+    {
+      "obstacle_id": "OBS-UG-BVG-KIOSK",
+      "name": "BVG-Kundenzentrum / Bäcker-Pavillon",
+      "points_px": [
+        [
+          955,
+          795
+        ],
+        [
+          1085,
+          735
+        ],
+        [
+          1220,
+          805
+        ],
+        [
+          1220,
+          935
+        ],
+        [
+          1085,
+          1005
+        ],
+        [
+          955,
+          935
+        ]
+      ],
+      "height_m": 3.2
+    },
+    {
+      "obstacle_id": "OBS-UG-MACHINES",
+      "name": "Fahrkartenautomaten-Reihe",
+      "points_px": [
+        [
+          735,
+          1025
+        ],
+        [
+          995,
+          1025
+        ],
+        [
+          995,
+          1245
+        ],
+        [
+          735,
+          1245
+        ]
+      ],
+      "height_m": 2.1
+    }
+  ],
+  "connector_zones": [
+    {
+      "zone_id": "UG-03-CONN-ST-B1",
+      "connector_id": "VC-ST-B1",
+      "type": "stairs",
+      "target_map": "CON-01",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          895,
+          745
+        ],
+        [
+          1205,
+          425
+        ],
+        [
+          1290,
+          465
+        ],
+        [
+          985,
+          805
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": -4.5,
+      "z_to": 0.0,
+      "label": "Treppe hinauf in die Bahnhofshalle CON-01 (L0)"
+    },
+    {
+      "zone_id": "UG-03-CONN-ESC-B",
+      "connector_id": "VC-ESC-B",
+      "type": "escalator",
+      "target_map": "CON-01",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          1250,
+          910
+        ],
+        [
+          1555,
+          515
+        ],
+        [
+          1670,
+          565
+        ],
+        [
+          1355,
+          995
+        ]
+      ],
+      "conveyor_velocity_px_s": [
+        42.0,
+        -28.0
+      ],
+      "z_from": -4.5,
+      "z_to": 0.0,
+      "label": "Doppel-Rolltreppe hinauf in die Bahnhofshalle CON-01 (L0)"
+    },
+    {
+      "zone_id": "UG-03-CONN-LIFT-01",
+      "connector_id": "VC-LIFT-01",
+      "type": "elevator",
+      "target_map": "CON-01",
+      "target_level": "L0 / L+1",
+      "trigger_polygon_px": [
+        [
+          1285,
+          760
+        ],
+        [
+          1425,
+          760
+        ],
+        [
+          1425,
+          855
+        ],
+        [
+          1285,
+          855
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": -4.5,
+      "z_to": 0.0,
+      "label": "Glasaufzug VC-LIFT-01 (nach CON-01 L0 oder RAIL-02 L+1)"
+    },
+    {
+      "zone_id": "UG-03-CONN-EXT-01",
+      "connector_id": "VC-EXT-UG-01",
+      "type": "stairs",
+      "target_map": "EXT-00",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          420,
+          365
+        ],
+        [
+          700,
+          220
+        ],
+        [
+          925,
+          340
+        ],
+        [
+          925,
+          485
+        ],
+        [
+          640,
+          635
+        ],
+        [
+          420,
+          515
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": -4.5,
+      "z_to": 0.0,
+      "label": "Aufgang 'U Alexanderplatz' zum Vorplatz EXT-00 (L0)"
+    }
+  ],
+  "interaction_zones": [
+    {
+      "interaction_id": "INT-UG-BVG",
+      "name": "BVG-Kundenzentrum / Bäcker",
+      "object_id": "UG-OBJ-001",
+      "position_px": [
+        1085,
+        875
+      ],
+      "radius_px": 85,
+      "type": "npc-dialogue",
+      "title": "BVG-Pavillon & Bäcker (Zwischengeschoss L-1)",
+      "description": "Zentraler achteckiger Pavillon in der gekachelten Verteilerebene über dem 11,25 m tiefen U5-Bahnsteig."
+    }
+  ]
+}

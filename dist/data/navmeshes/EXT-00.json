@@ -1,0 +1,290 @@
+{
+  "map_id": "EXT-00",
+  "level_id": "L0",
+  "floor_z": 0.0,
+  "agent_radius_px": 8.0,
+  "agent_radius_m": 0.4,
+  "walkable_polygons": [
+    {
+      "polygon_id": "EXT-00-WALK-PLAZA-MAIN",
+      "name": "Alexanderplatz Hauptfläche (zwischen Brunnen, Weltzeituhr und Viadukt)",
+      "points_px": [
+        [
+          420,
+          620
+        ],
+        [
+          890,
+          480
+        ],
+        [
+          1220,
+          680
+        ],
+        [
+          920,
+          1080
+        ],
+        [
+          320,
+          920
+        ]
+      ],
+      "points_world_m": [
+        [
+          15,
+          35
+        ],
+        [
+          70,
+          35
+        ],
+        [
+          70,
+          140
+        ],
+        [
+          15,
+          140
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "EXT-00-WALK-VIADUCT-ARCADE"
+      ]
+    },
+    {
+      "polygon_id": "EXT-00-WALK-VIADUCT-ARCADE",
+      "name": "Viadukt-Arkaden & Vorplatz Ost",
+      "points_px": [
+        [
+          920,
+          1080
+        ],
+        [
+          1365,
+          865
+        ],
+        [
+          1820,
+          620
+        ],
+        [
+          1680,
+          1180
+        ],
+        [
+          1080,
+          1380
+        ]
+      ],
+      "points_world_m": [
+        [
+          70,
+          50
+        ],
+        [
+          290,
+          50
+        ],
+        [
+          290,
+          130
+        ],
+        [
+          70,
+          130
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "EXT-00-WALK-PLAZA-MAIN"
+      ]
+    }
+  ],
+  "collision_polygons": [
+    {
+      "obstacle_id": "OBS-EXT-FOUNTAIN",
+      "name": "Brunnen der Völkerfreundschaft (Ø 23 m)",
+      "points_px": [
+        [
+          620,
+          650
+        ],
+        [
+          660,
+          585
+        ],
+        [
+          755,
+          568
+        ],
+        [
+          850,
+          585
+        ],
+        [
+          890,
+          650
+        ],
+        [
+          850,
+          715
+        ],
+        [
+          755,
+          732
+        ],
+        [
+          660,
+          715
+        ]
+      ],
+      "height_m": 6.2
+    },
+    {
+      "obstacle_id": "OBS-EXT-WORLDCLOCK",
+      "name": "Urania-Weltzeituhr (H 10 m)",
+      "points_px": [
+        [
+          695,
+          925
+        ],
+        [
+          755,
+          925
+        ],
+        [
+          755,
+          975
+        ],
+        [
+          695,
+          975
+        ]
+      ],
+      "height_m": 10.0
+    }
+  ],
+  "connector_zones": [
+    {
+      "zone_id": "EXT-00-CONN-PORTAL-W1",
+      "connector_id": "HC-PORTAL-W1",
+      "type": "portal",
+      "target_map": "CON-01",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          1395,
+          920
+        ],
+        [
+          1525,
+          835
+        ],
+        [
+          1575,
+          885
+        ],
+        [
+          1445,
+          970
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": 0.0,
+      "z_to": 0.0,
+      "label": "Eingang zur Bahnhofshalle CON-01 (L0)"
+    },
+    {
+      "zone_id": "EXT-00-CONN-UBAHN-01",
+      "connector_id": "VC-EXT-UG-01",
+      "type": "stairs",
+      "target_map": "UG-03",
+      "target_level": "L-1",
+      "trigger_polygon_px": [
+        [
+          855,
+          1235
+        ],
+        [
+          995,
+          1235
+        ],
+        [
+          1055,
+          1285
+        ],
+        [
+          925,
+          1365
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": 0.0,
+      "z_to": -4.5,
+      "label": "U-Bahn-Zugang nach UG-03 (L-1)"
+    },
+    {
+      "zone_id": "EXT-00-CONN-RAIL-01",
+      "connector_id": "VC-EXT-RAIL-01",
+      "type": "stairs",
+      "target_map": "RAIL-02",
+      "target_level": "L+1",
+      "trigger_polygon_px": [
+        [
+          915,
+          875
+        ],
+        [
+          1015,
+          760
+        ],
+        [
+          1018,
+          815
+        ],
+        [
+          945,
+          905
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": 0.0,
+      "z_to": 8.46,
+      "label": "Freitreppe hinauf zum Bahnsteig RAIL-02 (L+1)"
+    }
+  ],
+  "interaction_zones": [
+    {
+      "interaction_id": "INT-EXT-CLOCK",
+      "name": "Urania-Weltzeituhr",
+      "object_id": "EXT-OBJ-003",
+      "position_px": [
+        725,
+        955
+      ],
+      "radius_px": 65,
+      "type": "quest-item",
+      "title": "Urania-Weltzeituhr (10,0 m Höhe, 1969)",
+      "description": "Treffpunkt auf dem Alexanderplatz. Die 24-eckige Zeitzonentrommel ruht auf einer 2,70 m hohen Säule über einem 5×5 m großen Technikraum."
+    },
+    {
+      "interaction_id": "INT-EXT-FOUNTAIN",
+      "name": "Brunnen der Völkerfreundschaft",
+      "object_id": "EXT-OBJ-002",
+      "position_px": [
+        755,
+        650
+      ],
+      "radius_px": 110,
+      "type": "quest-item",
+      "title": "Brunnen der Völkerfreundschaft (Ø 23,0 m, H 6,20 m)",
+      "description": "1970 eingeweihte Brunnenanlage mit 23 m Außendurchmesser und 17 spiralförmig angeordneten Wasserschalen."
+    }
+  ]
+}

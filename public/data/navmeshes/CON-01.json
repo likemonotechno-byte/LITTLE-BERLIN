@@ -1,0 +1,794 @@
+{
+  "map_id": "CON-01",
+  "level_id": "L0",
+  "floor_z": 0.0,
+  "agent_radius_px": 12.5,
+  "agent_radius_m": 0.4,
+  "walkable_polygons": [
+    {
+      "polygon_id": "CON-01-WALK-MAIN-NW",
+      "name": "Westliche Haupthalle (zwischen Glasgiebel und Info-Rondell)",
+      "points_px": [
+        [
+          140,
+          815
+        ],
+        [
+          715,
+          455
+        ],
+        [
+          965,
+          585
+        ],
+        [
+          665,
+          765
+        ],
+        [
+          415,
+          925
+        ]
+      ],
+      "points_world_m": [
+        [
+          5,
+          10
+        ],
+        [
+          5,
+          55
+        ],
+        [
+          65,
+          55
+        ],
+        [
+          65,
+          10
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "CON-01-WALK-NORTH-ARCADE",
+        "CON-01-WALK-CENTRAL-WEST",
+        "CON-01-CONN-PORTAL-W1"
+      ]
+    },
+    {
+      "polygon_id": "CON-01-WALK-NORTH-ARCADE",
+      "name": "Nördliche Ladenpassage vor Bäckerei & Kiosk",
+      "points_px": [
+        [
+          730,
+          595
+        ],
+        [
+          965,
+          585
+        ],
+        [
+          1485,
+          845
+        ],
+        [
+          1220,
+          915
+        ],
+        [
+          1060,
+          730
+        ],
+        [
+          810,
+          680
+        ]
+      ],
+      "points_world_m": [
+        [
+          65,
+          10
+        ],
+        [
+          185,
+          10
+        ],
+        [
+          185,
+          28
+        ],
+        [
+          65,
+          28
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "CON-01-WALK-MAIN-NW",
+        "CON-01-WALK-CENTRAL-WEST",
+        "CON-01-WALK-EAST-CONCOURSE",
+        "CON-01-CONN-ESC-A",
+        "CON-01-CONN-ST-B1"
+      ]
+    },
+    {
+      "polygon_id": "CON-01-WALK-CENTRAL-WEST",
+      "name": "Zentraler Durchgang zwischen Westpfeiler, Info-Rondell und U-Bahn-Schacht",
+      "points_px": [
+        [
+          645,
+          775
+        ],
+        [
+          810,
+          680
+        ],
+        [
+          990,
+          775
+        ],
+        [
+          850,
+          865
+        ],
+        [
+          1130,
+          1035
+        ],
+        [
+          1020,
+          1110
+        ],
+        [
+          645,
+          905
+        ]
+      ],
+      "points_world_m": [
+        [
+          55,
+          28
+        ],
+        [
+          95,
+          28
+        ],
+        [
+          95,
+          52
+        ],
+        [
+          55,
+          52
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "CON-01-WALK-MAIN-NW",
+        "CON-01-WALK-NORTH-ARCADE",
+        "CON-01-WALK-SOUTH-PROMENADE",
+        "CON-01-WALK-VESTIBULE-SW",
+        "CON-01-CONN-ST-B1"
+      ]
+    },
+    {
+      "polygon_id": "CON-01-WALK-SOUTH-PROMENADE",
+      "name": "Südliche Hallenpromenade vor den roten Fahrkartenautomaten bis zum Aufzug/Ostportal",
+      "points_px": [
+        [
+          1020,
+          1110
+        ],
+        [
+          1130,
+          1035
+        ],
+        [
+          1445,
+          1185
+        ],
+        [
+          1565,
+          1085
+        ],
+        [
+          1740,
+          1165
+        ],
+        [
+          1235,
+          1445
+        ],
+        [
+          960,
+          1295
+        ]
+      ],
+      "points_world_m": [
+        [
+          95,
+          48
+        ],
+        [
+          195,
+          48
+        ],
+        [
+          195,
+          70
+        ],
+        [
+          95,
+          70
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "CON-01-WALK-CENTRAL-WEST",
+        "CON-01-WALK-EAST-CONCOURSE",
+        "CON-01-CONN-LIFT-01",
+        "CON-01-CONN-ESC-A",
+        "CON-01-CONN-PORTAL-E2"
+      ]
+    },
+    {
+      "polygon_id": "CON-01-WALK-EAST-CONCOURSE",
+      "name": "Östlicher Hallenbereich vor Aufzug, Rolltreppen und Snack-Bogen",
+      "points_px": [
+        [
+          1220,
+          915
+        ],
+        [
+          1485,
+          845
+        ],
+        [
+          1935,
+          1035
+        ],
+        [
+          1740,
+          1165
+        ],
+        [
+          1565,
+          1085
+        ],
+        [
+          1445,
+          1185
+        ]
+      ],
+      "points_world_m": [
+        [
+          150,
+          25
+        ],
+        [
+          215,
+          25
+        ],
+        [
+          215,
+          55
+        ],
+        [
+          150,
+          55
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "CON-01-WALK-NORTH-ARCADE",
+        "CON-01-WALK-SOUTH-PROMENADE",
+        "CON-01-CONN-ESC-A",
+        "CON-01-CONN-LIFT-01",
+        "CON-01-CONN-ST-A"
+      ]
+    },
+    {
+      "polygon_id": "CON-01-WALK-VESTIBULE-SW",
+      "name": "Südwestliche Vorhalle (Vestibül mit Sitzbänken und Westeingang)",
+      "points_px": [
+        [
+          220,
+          1045
+        ],
+        [
+          475,
+          920
+        ],
+        [
+          685,
+          1035
+        ],
+        [
+          525,
+          1265
+        ]
+      ],
+      "points_world_m": [
+        [
+          15,
+          40
+        ],
+        [
+          55,
+          40
+        ],
+        [
+          55,
+          70
+        ],
+        [
+          15,
+          70
+        ]
+      ],
+      "floor_z": 0.0,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": [
+        "CON-01-WALK-CENTRAL-WEST",
+        "CON-01-CONN-PORTAL-W2"
+      ]
+    }
+  ],
+  "collision_polygons": [
+    {
+      "obstacle_id": "OBS-CON-INFO",
+      "name": "DB Info-Rondell",
+      "points_px": [
+        [
+          675,
+          680
+        ],
+        [
+          740,
+          645
+        ],
+        [
+          805,
+          680
+        ],
+        [
+          805,
+          735
+        ],
+        [
+          740,
+          765
+        ],
+        [
+          675,
+          735
+        ]
+      ],
+      "height_m": 4.2
+    },
+    {
+      "obstacle_id": "OBS-CON-DEPBOARD",
+      "name": "Abfahrtstafel & Wartebank",
+      "points_px": [
+        [
+          800,
+          715
+        ],
+        [
+          975,
+          630
+        ],
+        [
+          995,
+          655
+        ],
+        [
+          820,
+          745
+        ]
+      ],
+      "height_m": 3.8
+    },
+    {
+      "obstacle_id": "OBS-CON-PIER-W",
+      "name": "Klinker-Stützpfeiler West",
+      "points_px": [
+        [
+          540,
+          830
+        ],
+        [
+          590,
+          800
+        ],
+        [
+          635,
+          830
+        ],
+        [
+          590,
+          865
+        ]
+      ],
+      "height_m": 7.5
+    },
+    {
+      "obstacle_id": "OBS-CON-PIER-N",
+      "name": "Klinker-Stützpfeiler Nord",
+      "points_px": [
+        [
+          970,
+          570
+        ],
+        [
+          1015,
+          545
+        ],
+        [
+          1060,
+          570
+        ],
+        [
+          1015,
+          600
+        ]
+      ],
+      "height_m": 7.5
+    },
+    {
+      "obstacle_id": "OBS-CON-VOID",
+      "name": "Deckendurchbruch U-Bahn-Abgang (Brüstung)",
+      "points_px": [
+        [
+          895,
+          865
+        ],
+        [
+          1060,
+          745
+        ],
+        [
+          1275,
+          865
+        ],
+        [
+          1085,
+          995
+        ]
+      ],
+      "height_m": 1.2
+    },
+    {
+      "obstacle_id": "OBS-CON-MACHINES",
+      "name": "Rote Fahrkartenautomaten-Reihe",
+      "points_px": [
+        [
+          1145,
+          1020
+        ],
+        [
+          1185,
+          990
+        ],
+        [
+          1430,
+          1130
+        ],
+        [
+          1395,
+          1165
+        ]
+      ],
+      "height_m": 2.1
+    },
+    {
+      "obstacle_id": "OBS-CON-BENCH-W",
+      "name": "Wartebank West",
+      "points_px": [
+        [
+          320,
+          810
+        ],
+        [
+          355,
+          790
+        ],
+        [
+          415,
+          835
+        ],
+        [
+          380,
+          855
+        ]
+      ],
+      "height_m": 0.9
+    }
+  ],
+  "connector_zones": [
+    {
+      "zone_id": "CON-01-CONN-ST-B1",
+      "connector_id": "VC-ST-B1",
+      "type": "stairs",
+      "target_map": "UG-03",
+      "target_level": "L-1",
+      "trigger_polygon_px": [
+        [
+          855,
+          845
+        ],
+        [
+          945,
+          795
+        ],
+        [
+          1015,
+          840
+        ],
+        [
+          925,
+          895
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": 0.0,
+      "z_to": -4.5,
+      "label": "Treppe 'U-Bahn ↓' nach UG-03 (L-1)"
+    },
+    {
+      "zone_id": "CON-01-CONN-ESC-A",
+      "connector_id": "VC-ESC-A",
+      "type": "escalator",
+      "target_map": "RAIL-02",
+      "target_level": "L+1",
+      "trigger_polygon_px": [
+        [
+          1235,
+          915
+        ],
+        [
+          1395,
+          775
+        ],
+        [
+          1485,
+          825
+        ],
+        [
+          1335,
+          975
+        ]
+      ],
+      "conveyor_velocity_px_s": [
+        42.0,
+        -28.0
+      ],
+      "z_from": 0.0,
+      "z_to": 8.26,
+      "label": "Doppel-Rolltreppe nach RAIL-02 (L+1 Bahnsteig)"
+    },
+    {
+      "zone_id": "CON-01-CONN-LIFT-01",
+      "connector_id": "VC-LIFT-01",
+      "type": "elevator",
+      "target_map": "RAIL-02",
+      "target_level": "L+1 / L-1",
+      "trigger_polygon_px": [
+        [
+          1465,
+          980
+        ],
+        [
+          1565,
+          935
+        ],
+        [
+          1635,
+          985
+        ],
+        [
+          1545,
+          1045
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": 0.0,
+      "z_to": 8.46,
+      "label": "Glasaufzug VC-LIFT-01 (Direktwahl L+1 Bahnsteig / L0 Halle / L-1 U-Bahn)"
+    },
+    {
+      "zone_id": "CON-01-CONN-ST-A",
+      "connector_id": "VC-ST-A",
+      "type": "stairs",
+      "target_map": "RAIL-02",
+      "target_level": "L+1",
+      "trigger_polygon_px": [
+        [
+          1535,
+          1055
+        ],
+        [
+          1725,
+          865
+        ],
+        [
+          1810,
+          905
+        ],
+        [
+          1610,
+          1105
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": 0.0,
+      "z_to": 8.46,
+      "label": "Treppe zum Bahnsteig RAIL-02 (L+1)"
+    },
+    {
+      "zone_id": "CON-01-CONN-PORTAL-W1",
+      "connector_id": "HC-PORTAL-W1",
+      "type": "portal",
+      "target_map": "EXT-00",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          260,
+          610
+        ],
+        [
+          455,
+          495
+        ],
+        [
+          515,
+          535
+        ],
+        [
+          320,
+          650
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": 0.0,
+      "z_to": 0.0,
+      "label": "Westportal zum Bahnhofsvorplatz EXT-00 (Weltzeituhr / Brunnen)"
+    },
+    {
+      "zone_id": "CON-01-CONN-PORTAL-W2",
+      "connector_id": "HC-PORTAL-W2",
+      "type": "portal",
+      "target_map": "EXT-00",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          455,
+          1215
+        ],
+        [
+          545,
+          1170
+        ],
+        [
+          585,
+          1245
+        ],
+        [
+          495,
+          1295
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": 0.0,
+      "z_to": 0.0,
+      "label": "Südwesteingang zum Vorplatz EXT-00"
+    },
+    {
+      "zone_id": "CON-01-CONN-PORTAL-E2",
+      "connector_id": "HC-PORTAL-E2",
+      "type": "portal",
+      "target_map": "EXT-00",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          1495,
+          1215
+        ],
+        [
+          1610,
+          1150
+        ],
+        [
+          1665,
+          1215
+        ],
+        [
+          1550,
+          1280
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": 0.0,
+      "z_to": 0.0,
+      "label": "Südosteingang Richtung Dircksen-/Gontardstraße (EXT-00)"
+    }
+  ],
+  "interaction_zones": [
+    {
+      "interaction_id": "INT-CON-INFO",
+      "name": "DB Information (Rondell)",
+      "object_id": "CON-OBJ-003",
+      "position_px": [
+        735,
+        745
+      ],
+      "radius_px": 75,
+      "type": "npc-dialogue",
+      "title": "DB Information — Auskunftsschalter",
+      "description": "Rundes Informations-Terminal in der Hallenmitte. Hier laufen alle Fäden über Zugankünfte, Fundsachen und den Schichtplan der Station zusammen."
+    },
+    {
+      "interaction_id": "INT-CON-TICKETS",
+      "name": "Fahrkartenautomaten (Rot)",
+      "object_id": "CON-OBJ-005",
+      "position_px": [
+        1260,
+        1110
+      ],
+      "radius_px": 85,
+      "type": "minigame",
+      "title": "DB / VBB Fahrkartenautomat",
+      "description": "Fünf rote Automaten vor dem U-Bahn-Abgang. Hier kann ein gültiger Fahrschein AB für die U-Bahn-Sperren (UG-03) und die S-Bahn (RAIL-02) gelöst werden."
+    },
+    {
+      "interaction_id": "INT-CON-BAKERY",
+      "name": "Bäckerei im Viaduktbogen",
+      "object_id": "CON-OBJ-001",
+      "position_px": [
+        1120,
+        645
+      ],
+      "radius_px": 75,
+      "type": "shop",
+      "title": "Bahnhofsbäckerei (Stadtbahnbogen)",
+      "description": "Warmer Duft nach Schrippen und Filterkaffee aus dem gemauerten Backsteinbogen. Ein heißer Kaffee öffnet so manche Tür beim Wachpersonal."
+    },
+    {
+      "interaction_id": "INT-CON-KIOSK",
+      "name": "Kiosk im Viaduktbogen",
+      "object_id": "CON-OBJ-002",
+      "position_px": [
+        1310,
+        745
+      ],
+      "radius_px": 75,
+      "type": "shop",
+      "title": "Reisekiosk & Presse",
+      "description": "Tageszeitungen, Stadtpläne und Fahrplanhefte im nördlichen Viaduktbogen direkt neben den Rolltreppen."
+    },
+    {
+      "interaction_id": "INT-CON-DEPBOARD",
+      "name": "Elektronische Abfahrtstafel",
+      "object_id": "CON-OBJ-006",
+      "position_px": [
+        885,
+        765
+      ],
+      "radius_px": 70,
+      "type": "quest-item",
+      "title": "Dynamischer Fahrgastinformationsanzeiger",
+      "description": "Gleis 1/2 (209 m): RE1 nach Frankfurt (Oder), FEX zum Flughafen BER | Gleis 3/4 (185 m): S5 Strausberg Nord, S7 Ahrensfelde, S9 Spandau."
+    }
+  ]
+}

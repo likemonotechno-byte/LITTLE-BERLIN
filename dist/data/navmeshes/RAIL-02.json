@@ -1,0 +1,231 @@
+{
+  "map_id": "RAIL-02",
+  "level_id": "L+1",
+  "floor_z": 8.46,
+  "agent_radius_px": 12.5,
+  "agent_radius_m": 0.4,
+  "walkable_polygons": [
+    {
+      "polygon_id": "RAIL-02-WALK-PLAT-A",
+      "name": "S-Bahn-Mittelbahnsteig Gleis 3/4 (185,0 m Nettobaulänge, H=96 cm)",
+      "points_px": [
+        [
+          235,
+          1005
+        ],
+        [
+          1225,
+          425
+        ],
+        [
+          1865,
+          815
+        ],
+        [
+          870,
+          1365
+        ]
+      ],
+      "points_world_m": [
+        [
+          15,
+          15
+        ],
+        [
+          200,
+          15
+        ],
+        [
+          200,
+          25
+        ],
+        [
+          15,
+          25
+        ]
+      ],
+      "floor_z": 8.46,
+      "allowed": true,
+      "speed_modifier": 1.0,
+      "neighbors": []
+    }
+  ],
+  "collision_polygons": [
+    {
+      "obstacle_id": "OBS-RAIL-SHELTER",
+      "name": "Wetterschutzhaus",
+      "points_px": [
+        [
+          455,
+          895
+        ],
+        [
+          615,
+          845
+        ],
+        [
+          695,
+          975
+        ],
+        [
+          535,
+          1085
+        ]
+      ],
+      "height_m": 3.0
+    },
+    {
+      "obstacle_id": "OBS-RAIL-KIOSK",
+      "name": "Bahnsteig-Kiosk",
+      "points_px": [
+        [
+          1150,
+          755
+        ],
+        [
+          1275,
+          755
+        ],
+        [
+          1275,
+          880
+        ],
+        [
+          1150,
+          880
+        ]
+      ],
+      "height_m": 3.2
+    },
+    {
+      "obstacle_id": "OBS-RAIL-WELL",
+      "name": "Rolltreppen-Öffnung",
+      "points_px": [
+        [
+          665,
+          1110
+        ],
+        [
+          875,
+          995
+        ],
+        [
+          1110,
+          1135
+        ],
+        [
+          895,
+          1255
+        ]
+      ],
+      "height_m": 1.1
+    }
+  ],
+  "connector_zones": [
+    {
+      "zone_id": "RAIL-02-CONN-ESC-A",
+      "connector_id": "VC-ESC-A",
+      "type": "escalator",
+      "target_map": "CON-01",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          1250,
+          910
+        ],
+        [
+          1565,
+          515
+        ],
+        [
+          1675,
+          560
+        ],
+        [
+          1355,
+          975
+        ]
+      ],
+      "conveyor_velocity_px_s": [
+        -42.0,
+        28.0
+      ],
+      "z_from": 8.26,
+      "z_to": 0.0,
+      "label": "Doppel-Rolltreppe hinab in die Bahnhofshalle CON-01 (L0)"
+    },
+    {
+      "zone_id": "RAIL-02-CONN-LIFT-01",
+      "connector_id": "VC-LIFT-01",
+      "type": "elevator",
+      "target_map": "CON-01",
+      "target_level": "L0 / L-1",
+      "trigger_polygon_px": [
+        [
+          1280,
+          755
+        ],
+        [
+          1425,
+          755
+        ],
+        [
+          1425,
+          855
+        ],
+        [
+          1280,
+          855
+        ]
+      ],
+      "speed_modifier": 1.0,
+      "z_from": 8.46,
+      "z_to": 0.0,
+      "label": "Glasaufzug VC-LIFT-01 (nach CON-01 L0 oder UG-03 L-1)"
+    },
+    {
+      "zone_id": "RAIL-02-CONN-ST-A",
+      "connector_id": "VC-ST-A",
+      "type": "stairs",
+      "target_map": "CON-01",
+      "target_level": "L0",
+      "trigger_polygon_px": [
+        [
+          895,
+          765
+        ],
+        [
+          1215,
+          415
+        ],
+        [
+          1290,
+          450
+        ],
+        [
+          995,
+          835
+        ]
+      ],
+      "speed_modifier": 0.75,
+      "z_from": 8.46,
+      "z_to": 0.0,
+      "label": "Treppe hinab in die Bahnhofshalle CON-01 (L0)"
+    }
+  ],
+  "interaction_zones": [
+    {
+      "interaction_id": "INT-RAIL-SBAHN",
+      "name": "S-Bahn-Zug Baureihe 481 (Gleis 3/4)",
+      "object_id": "RAIL-OBJ-001",
+      "position_px": [
+        615,
+        650
+      ],
+      "radius_px": 95,
+      "type": "schedule-event",
+      "title": "S-Bahn Baureihe 481 am 185-m-Bahnsteig (H = 96 cm)",
+      "description": "Viertelzug-Länge 36,8 m (Normalspur 1.435 mm). Hält am 185 m langen S-Bahnsteig (Bahnsteighöhe 96 cm über Schienenoberkante)."
+    }
+  ]
+}

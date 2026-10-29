@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "project": "KLEIN BERLIN · Engine Render QA",
+  "scenes": [
+    {
+      "id": "TILED-NAV-DEMO",
+      "manifest": "data/scenes/examples/TILED-NAV-DEMO.manifest.json"
+    }
+  ],
+  "defaultScene": "TILED-NAV-DEMO",
+  "sharedAssets": {
+    "playerSheet": "assets/player/player_sheet.png",
+    "connectorRegister": "data/legacy/connector-register.json",
+    "assetRegister": "data/legacy/asset-register.json",
+    "traceRegister": "data/legacy/trace-register.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "projectId": "klein-berlin",
+  "name": "KLEIN BERLIN",
+  "engineCompatibility": ">=1.1.0",
+  "units": "meters",
+  "projection": {
+    "type": "dimetric-2-to-1",
+    "tileWidthPx": 256,
+    "tileHeightPx": 128,
+    "referenceCellMeters": 10,
+    "elevationPxPerMeter": 9.6
+  },
+  "worldIndex": "data/worlds/klein-berlin/world-index.json",
+  "assetCatalog": "data/worlds/klein-berlin/asset-catalog.json"
+}

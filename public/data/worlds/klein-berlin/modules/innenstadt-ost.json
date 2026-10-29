@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "kb-innenstadt-ost",
+  "name": "Innenstadt Ost – World Model Fixture",
+  "coordinateSpace": "module-local-meters",
+  "boundsMeters": {
+    "width": 100,
+    "depth": 100,
+    "height": 24
+  },
+  "levels": [
+    {
+      "id": "ground",
+      "label": "Straßenebene",
+      "zMeters": 0
+    },
+    {
+      "id": "u1",
+      "label": "Untergeschoss",
+      "zMeters": -4
+    }
+  ],
+  "layers": [
+    {
+      "id": "reference",
+      "name": "Referenzbilder",
+      "kind": "reference-image",
+      "visibleInRuntime": false,
+      "locked": true,
+      "opacity": 0.6
+    },
+    {
+      "id": "ground",
+      "name": "Boden und Pflaster",
+      "kind": "tilemap",
+      "visibleInRuntime": true
+    },
+    {
+      "id": "roads",
+      "name": "Straßen und Wege",
+      "kind": "vector-geometry",
+      "visibleInRuntime": true
+    },
+    {
+      "id": "buildings",
+      "name": "Gebäudeobjekte",
+      "kind": "asset-instances",
+      "visibleInRuntime": true
+    },
+    {
+      "id": "navigation",
+      "name": "Abgeleitete Navigation",
+      "kind": "derived-navigation",
+      "visibleInRuntime": false
+    }
+  ],
+  "referenceImages": [],
+  "tilemaps": [],
+  "geometries": [
+    {
+      "id": "east-main-road",
+      "kind": "road-centerline",
+      "levelId": "ground",
+      "widthMeters": 10,
+      "geometry": {
+        "type": "LineString",
+        "pointsMeters": [
+          {
+            "x": 0,
+            "y": 50
+          },
+          {
+            "x": 100,
+            "y": 50
+          }
+        ]
+      },
+      "tags": [
+        "street",
+        "connector-road"
+      ],
+      "properties": {
+        "roadClass": "secondary",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "east-neighborhood-park",
+      "kind": "park",
+      "levelId": "ground",
+      "geometry": {
+        "type": "Polygon",
+        "ringsMeters": [
+          [
+            {
+              "x": 35,
+              "y": 65
+            },
+            {
+              "x": 75,
+              "y": 65
+            },
+            {
+              "x": 75,
+              "y": 90
+            },
+            {
+              "x": 35,
+              "y": 90
+            }
+          ]
+        ]
+      },
+      "tags": [
+        "green-space",
+        "neighborhood-park"
+      ]
+    }
+  ],
+  "entities": [],
+  "connectors": [
+    {
+      "id": "road-west",
+      "type": "road",
+      "levelId": "ground",
+      "positionMeters": {
+        "x": 0,
+        "y": 50,
+        "z": 0
+      },
+      "headingDegrees": 180,
+      "widthMeters": 10,
+      "target": {
+        "moduleId": "kb-innenstadt-west",
+        "connectorId": "road-east"
+      },
+      "profile": "urban-secondary-road"
+    }
+  ]
+}

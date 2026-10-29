@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "bench-wood",
+      "displayName": "Kiez-Holzbank",
+      "category": "street-furniture",
+      "visual": {
+        "image": "assets/slices/p2-int-bench-wood.png",
+        "projection": "dimetric-2-to-1",
+        "anchor": "south-footpoint",
+        "nominalWidthPx": 52,
+        "nominalHeightPx": 44
+      },
+      "footprint": {
+        "shape": "polygon",
+        "pointsMeters": [
+          { "x": -1.0, "y": -0.4 },
+          { "x": 1.0, "y": -0.4 },
+          { "x": 1.0, "y": 0.4 },
+          { "x": -1.0, "y": 0.4 }
+        ]
+      },
+      "heightMeters": 0.9,
+      "collisionProfile": "box",
+      "walkableTop": false,
+      "tags": ["street-furniture", "bench", "urban"],
+      "variants": ["standard"],
+      "source": {
+        "type": "project-asset",
+        "license": "CC-BY-4.0"
+      }
+    },
+    {
+      "id": "ticket-red",
+      "displayName": "BVG Ticketautomat (Rot)",
+      "category": "street-furniture",
+      "visual": {
+        "image": "assets/slices/p2-int-ticket-red.png",
+        "projection": "dimetric-2-to-1",
+        "anchor": "south-footpoint",
+        "nominalWidthPx": 151,
+        "nominalHeightPx": 115
+      },
+      "footprint": {
+        "shape": "polygon",
+        "pointsMeters": [
+          { "x": -0.8, "y": -0.6 },
+          { "x": 0.8, "y": -0.6 },
+          { "x": 0.8, "y": 0.6 },
+          { "x": -0.8, "y": 0.6 }
+        ]
+      },
+      "heightMeters": 2.1,
+      "collisionProfile": "box",
+      "walkableTop": false,
+      "tags": ["street-furniture", "ticket", "transit"],
+      "variants": ["standard"],
+      "source": {
+        "type": "project-asset",
+        "license": "CC-BY-4.0"
+      }
+    },
+    {
+      "id": "info-rondell",
+      "displayName": "DB Info-Rondell",
+      "category": "street-furniture",
+      "visual": {
+        "image": "assets/slices/p0-slice-info-01.png",
+        "projection": "dimetric-2-to-1",
+        "anchor": "south-footpoint",
+        "nominalWidthPx": 73,
+        "nominalHeightPx": 97
+      },
+      "footprint": {
+        "shape": "polygon",
+        "pointsMeters": [
+          { "x": -1.5, "y": -1.5 },
+          { "x": 1.5, "y": -1.5 },
+          { "x": 1.5, "y": 1.5 },
+          { "x": -1.5, "y": 1.5 }
+        ]
+      },
+      "heightMeters": 3.2,
+      "collisionProfile": "cylinder",
+      "walkableTop": false,
+      "tags": ["street-furniture", "info", "station"],
+      "variants": ["standard"],
+      "source": {
+        "type": "project-asset",
+        "license": "CC-BY-4.0"
+      }
+    },
+    {
+      "id": "depboard",
+      "displayName": "Abfahrtstafel (Fernbahn)",
+      "category": "street-furniture",
+      "visual": {
+        "image": "assets/slices/p1-arch-depboard.png",
+        "projection": "dimetric-2-to-1",
+        "anchor": "south-footpoint",
+        "nominalWidthPx": 99,
+        "nominalHeightPx": 111
+      },
+      "footprint": {
+        "shape": "polygon",
+        "pointsMeters": [
+          { "x": -1.2, "y": -0.5 },
+          { "x": 1.2, "y": -0.5 },
+          { "x": 1.2, "y": 0.5 },
+          { "x": -1.2, "y": 0.5 }
+        ]
+      },
+      "heightMeters": 3.8,
+      "collisionProfile": "box",
+      "walkableTop": false,
+      "tags": ["street-furniture", "display", "railway"],
+      "variants": ["standard"],
+      "source": {
+        "type": "project-asset",
+        "license": "CC-BY-4.0"
+      }
+    },
+    {
+      "id": "glass-lift",
+      "displayName": "Historischer Glasaufzug",
+      "category": "building",
+      "visual": {
+        "image": "assets/slices/p0-slice-lift-01.png",
+        "projection": "dimetric-2-to-1",
+        "anchor": "south-footpoint",
+        "nominalWidthPx": 136,
+        "nominalHeightPx": 264
+      },
+      "footprint": {
+        "shape": "polygon",
+        "pointsMeters": [
+          { "x": -1.8, "y": -1.8 },
+          { "x": 1.8, "y": -1.8 },
+          { "x": 1.8, "y": 1.8 },
+          { "x": -1.8, "y": 1.8 }
+        ]
+      },
+      "heightMeters": 8.0,
+      "collisionProfile": "box",
+      "walkableTop": false,
+      "tags": ["building", "lift", "station"],
+      "variants": ["standard"],
+      "source": {
+        "type": "project-asset",
+        "license": "CC-BY-4.0"
+      }
+    },
+    {
+      "id": "facade-wall",
+      "displayName": "Gründerzeit-Fassade",
+      "category": "building",
+      "visual": {
+        "image": "assets/slices/p0-slice-fg-wall.png",
+        "projection": "dimetric-2-to-1",
+        "anchor": "south-footpoint",
+        "nominalWidthPx": 639,
+        "nominalHeightPx": 271
+      },
+      "footprint": {
+        "shape": "polygon",
+        "pointsMeters": [
+          { "x": -8.0, "y": -1.0 },
+          { "x": 8.0, "y": -1.0 },
+          { "x": 8.0, "y": 1.0 },
+          { "x": -8.0, "y": 1.0 }
+        ]
+      },
+      "heightMeters": 14.0,
+      "collisionProfile": "box",
+      "walkableTop": false,
+      "tags": ["building", "facade", "architecture"],
+      "variants": ["standard"],
+      "source": {
+        "type": "project-asset",
+        "license": "CC-BY-4.0"
+      }
+    }
+  ]
+}
