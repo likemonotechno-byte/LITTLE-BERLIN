@@ -1,0 +1,1269 @@
+{
+  "EXT-00": {
+    "map_id": "EXT-00",
+    "reference_image": "references/EXT-00/REF_IMG_4949_exterior_plaza.jpeg",
+    "image_width_px": 2048,
+    "image_height_px": 1529,
+    "traced_features": [
+      {
+        "feature_id": "TR-EXT-01",
+        "name": "Bahnhofshalle & Viadukt (164m Halle auf 220x80m Rahmen)",
+        "category": "VIADUCT_AND_HALL",
+        "measurement_status": "VERIFIED_AND_DERIVED",
+        "polygon_px": [
+          [
+            1018,
+            755
+          ],
+          [
+            1340,
+            540
+          ],
+          [
+            1470,
+            415
+          ],
+          [
+            2048,
+            55
+          ],
+          [
+            2048,
+            625
+          ],
+          [
+            1365,
+            1075
+          ],
+          [
+            1365,
+            865
+          ],
+          [
+            1018,
+            755
+          ]
+        ],
+        "world_bbox_m": [
+          70,
+          50,
+          290,
+          130
+        ]
+      },
+      {
+        "feature_id": "TR-EXT-02",
+        "name": "Brunnen der Völkerfreundschaft (Ø 23,0 m, H 6,20 m [VERIFIED])",
+        "category": "LANDMARK_VERIFIED",
+        "measurement_status": "VERIFIED",
+        "polygon_px": [
+          [
+            620,
+            650
+          ],
+          [
+            660,
+            585
+          ],
+          [
+            755,
+            568
+          ],
+          [
+            850,
+            585
+          ],
+          [
+            890,
+            650
+          ],
+          [
+            850,
+            715
+          ],
+          [
+            755,
+            732
+          ],
+          [
+            660,
+            715
+          ]
+        ],
+        "world_bbox_m": [
+          20,
+          70,
+          40,
+          90
+        ]
+      },
+      {
+        "feature_id": "TR-EXT-03",
+        "name": "Urania-Weltzeituhr (H 10,0 m, Säule Ø 1,5 m [VERIFIED])",
+        "category": "LANDMARK_VERIFIED",
+        "measurement_status": "VERIFIED",
+        "polygon_px": [
+          [
+            675,
+            845
+          ],
+          [
+            775,
+            845
+          ],
+          [
+            775,
+            980
+          ],
+          [
+            675,
+            980
+          ]
+        ],
+        "world_bbox_m": [
+          45,
+          85,
+          50,
+          90
+        ]
+      },
+      {
+        "feature_id": "TR-EXT-04",
+        "name": "Fernsehturm-Basisbauwerk (32 m ü. NHN [VERIFIED])",
+        "category": "BUILDING_FOOTPRINT",
+        "measurement_status": "DERIVED",
+        "polygon_px": [
+          [
+            320,
+            215
+          ],
+          [
+            465,
+            165
+          ],
+          [
+            560,
+            210
+          ],
+          [
+            765,
+            165
+          ],
+          [
+            875,
+            225
+          ],
+          [
+            785,
+            315
+          ],
+          [
+            875,
+            425
+          ],
+          [
+            770,
+            495
+          ],
+          [
+            620,
+            425
+          ],
+          [
+            460,
+            485
+          ],
+          [
+            340,
+            410
+          ],
+          [
+            415,
+            315
+          ]
+        ],
+        "world_bbox_m": [
+          35,
+          50,
+          50,
+          65
+        ]
+      },
+      {
+        "feature_id": "TR-EXT-05",
+        "name": "Galeria Kaufhof / Westblock",
+        "category": "BUILDING_FOOTPRINT",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            0,
+            250
+          ],
+          [
+            520,
+            505
+          ],
+          [
+            520,
+            815
+          ],
+          [
+            135,
+            1040
+          ],
+          [
+            0,
+            960
+          ]
+        ],
+        "world_bbox_m": [
+          0,
+          120,
+          45,
+          180
+        ]
+      },
+      {
+        "feature_id": "TR-EXT-06",
+        "name": "Straßenbahntrasse & Haltestelle (1.435 mm [VERIFIED])",
+        "category": "TRAM_TRACKS",
+        "measurement_status": "VERIFIED_GAUGE_ESTIMATED_AXIS",
+        "polygon_px": [
+          [
+            25,
+            1529
+          ],
+          [
+            1165,
+            815
+          ],
+          [
+            1235,
+            860
+          ],
+          [
+            155,
+            1529
+          ]
+        ],
+        "world_bbox_m": [
+          0,
+          25,
+          300,
+          35
+        ]
+      },
+      {
+        "feature_id": "TR-EXT-07",
+        "name": "VC-EXT-UG-01 (U-Bahn-Zugang Süd)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            855,
+            1235
+          ],
+          [
+            995,
+            1235
+          ],
+          [
+            1055,
+            1285
+          ],
+          [
+            925,
+            1365
+          ]
+        ],
+        "world_bbox_m": [
+          85,
+          110,
+          95,
+          115
+        ],
+        "connector_id": "VC-EXT-UG-01"
+      },
+      {
+        "feature_id": "TR-EXT-08",
+        "name": "VC-EXT-UG-02 (U-Bahn-Zugang West)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            475,
+            960
+          ],
+          [
+            580,
+            960
+          ],
+          [
+            665,
+            1025
+          ],
+          [
+            595,
+            1085
+          ]
+        ],
+        "world_bbox_m": [
+          75,
+          95,
+          85,
+          100
+        ],
+        "connector_id": "VC-EXT-UG-02"
+      },
+      {
+        "feature_id": "TR-EXT-09",
+        "name": "VC-EXT-RAIL-01 (Außentreppe zum Viadukt)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            915,
+            875
+          ],
+          [
+            1015,
+            760
+          ],
+          [
+            1018,
+            815
+          ],
+          [
+            945,
+            905
+          ]
+        ],
+        "world_bbox_m": [
+          70,
+          65,
+          80,
+          70
+        ],
+        "connector_id": "VC-EXT-RAIL-01"
+      },
+      {
+        "feature_id": "TR-EXT-10",
+        "name": "HC-PORTAL-W1 / W2 (Bahnhofszugänge & Arkaden)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            1415,
+            895
+          ],
+          [
+            2048,
+            470
+          ],
+          [
+            2048,
+            625
+          ],
+          [
+            1415,
+            1055
+          ]
+        ],
+        "world_bbox_m": [
+          70,
+          75,
+          75,
+          105
+        ],
+        "connector_id": "HC-PORTAL-W1"
+      }
+    ]
+  },
+  "CON-01": {
+    "map_id": "CON-01",
+    "reference_image": "references/CON-01/REF_IMG_4953_station_concourse.jpeg",
+    "image_width_px": 2048,
+    "image_height_px": 1529,
+    "traced_features": [
+      {
+        "feature_id": "TR-CON-01",
+        "name": "Hallenboden & Vorhalle (Ebene L0 = 0,00 m)",
+        "category": "CONCOURSE_FLOOR",
+        "measurement_status": "DERIVED",
+        "polygon_px": [
+          [
+            65,
+            825
+          ],
+          [
+            725,
+            415
+          ],
+          [
+            1985,
+            1035
+          ],
+          [
+            1225,
+            1495
+          ],
+          [
+            150,
+            1060
+          ]
+        ],
+        "world_bbox_m": [
+          0,
+          0,
+          220,
+          80
+        ]
+      },
+      {
+        "feature_id": "TR-CON-02",
+        "name": "Bäckerei im Viaduktbogen (CON-OBJ-001)",
+        "category": "SHOP_INTERIOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            1080,
+            490
+          ],
+          [
+            1215,
+            560
+          ],
+          [
+            1215,
+            680
+          ],
+          [
+            1080,
+            600
+          ]
+        ],
+        "world_bbox_m": [
+          55,
+          5,
+          70,
+          10
+        ]
+      },
+      {
+        "feature_id": "TR-CON-03",
+        "name": "Kiosk im Viaduktbogen (CON-OBJ-002)",
+        "category": "SHOP_INTERIOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            1265,
+            595
+          ],
+          [
+            1400,
+            665
+          ],
+          [
+            1400,
+            775
+          ],
+          [
+            1265,
+            705
+          ]
+        ],
+        "world_bbox_m": [
+          170,
+          5,
+          185,
+          10
+        ]
+      },
+      {
+        "feature_id": "TR-CON-04",
+        "name": "DB Info-Pavillon & Leuchtring (CON-OBJ-003 [VERIFIED])",
+        "category": "INFO_POINT",
+        "measurement_status": "VERIFIED_PRESENCE_ESTIMATED_SIZE",
+        "polygon_px": [
+          [
+            675,
+            580
+          ],
+          [
+            805,
+            580
+          ],
+          [
+            805,
+            760
+          ],
+          [
+            675,
+            760
+          ]
+        ],
+        "world_bbox_m": [
+          70,
+          35,
+          80,
+          40
+        ]
+      },
+      {
+        "feature_id": "TR-CON-05",
+        "name": "Deckendurchbruch & Zentraler U-Bahn-Abgang (VC-ST-B1)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            860,
+            865
+          ],
+          [
+            1060,
+            740
+          ],
+          [
+            1280,
+            865
+          ],
+          [
+            1085,
+            995
+          ]
+        ],
+        "world_bbox_m": [
+          95,
+          30,
+          120,
+          45
+        ],
+        "connector_id": "VC-ST-B1"
+      },
+      {
+        "feature_id": "TR-CON-06",
+        "name": "Doppel-Fahrtreppe zur Gleishalle (VC-ESC-A / A2 [VERIFIED: 8 Fahrtreppen])",
+        "category": "CONNECTOR",
+        "measurement_status": "DERIVED",
+        "polygon_px": [
+          [
+            1250,
+            925
+          ],
+          [
+            1505,
+            695
+          ],
+          [
+            1580,
+            740
+          ],
+          [
+            1365,
+            995
+          ]
+        ],
+        "world_bbox_m": [
+          135,
+          40,
+          150,
+          45
+        ],
+        "connector_id": "VC-ESC-A"
+      },
+      {
+        "feature_id": "TR-CON-07",
+        "name": "Verglaster Aufzugsschacht (VC-LIFT-01 [VERIFIED: 2 Aufzüge])",
+        "category": "CONNECTOR",
+        "measurement_status": "VERIFIED_COUNT_ESTIMATED_POS",
+        "polygon_px": [
+          [
+            1585,
+            565
+          ],
+          [
+            1725,
+            565
+          ],
+          [
+            1725,
+            1050
+          ],
+          [
+            1585,
+            1050
+          ]
+        ],
+        "world_bbox_m": [
+          105,
+          15,
+          110,
+          20
+        ],
+        "connector_id": "VC-LIFT-01"
+      },
+      {
+        "feature_id": "TR-CON-08",
+        "name": "Treppenaufgang zur Gleishalle (VC-ST-A / A2)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            1520,
+            1065
+          ],
+          [
+            1765,
+            825
+          ],
+          [
+            1845,
+            865
+          ],
+          [
+            1590,
+            1125
+          ]
+        ],
+        "world_bbox_m": [
+          35,
+          15,
+          45,
+          20
+        ],
+        "connector_id": "VC-ST-A"
+      },
+      {
+        "feature_id": "TR-CON-09",
+        "name": "Fahrkartenautomaten-Reihe (CON-OBJ-005)",
+        "category": "TICKET_MACHINE_BAY",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            1155,
+            970
+          ],
+          [
+            1430,
+            1125
+          ],
+          [
+            1400,
+            1185
+          ],
+          [
+            1140,
+            1035
+          ]
+        ],
+        "world_bbox_m": [
+          30,
+          55,
+          45,
+          60
+        ]
+      },
+      {
+        "feature_id": "TR-CON-10",
+        "name": "West- & Vorhallenportale (HC-PORTAL-W1 / W2)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            465,
+            1185
+          ],
+          [
+            560,
+            1185
+          ],
+          [
+            560,
+            1340
+          ],
+          [
+            465,
+            1340
+          ]
+        ],
+        "world_bbox_m": [
+          0,
+          25,
+          5,
+          55
+        ],
+        "connector_id": "HC-PORTAL-W1"
+      }
+    ]
+  },
+  "RAIL-02": {
+    "map_id": "RAIL-02",
+    "reference_image": "references/RAIL-02/REF_IMG_4951_elevated_rail_hall.jpeg",
+    "image_width_px": 2048,
+    "image_height_px": 1529,
+    "traced_features": [
+      {
+        "feature_id": "TR-RAIL-01",
+        "name": "Bahnsteig A (S-Bahn Gleis 3/4: 185,0 m / H=96 cm [VERIFIED: DB InfraGO])",
+        "category": "PLATFORM_VERIFIED",
+        "measurement_status": "VERIFIED",
+        "polygon_px": [
+          [
+            190,
+            1000
+          ],
+          [
+            1250,
+            395
+          ],
+          [
+            1910,
+            815
+          ],
+          [
+            870,
+            1390
+          ]
+        ],
+        "world_bbox_m": [
+          15,
+          15,
+          200,
+          25
+        ]
+      },
+      {
+        "feature_id": "TR-RAIL-02",
+        "name": "Bahnsteig B (Regionalbahn Gleis 1/2: 209,0 m / H=76 cm [VERIFIED: DB InfraGO])",
+        "category": "PLATFORM_VERIFIED",
+        "measurement_status": "VERIFIED",
+        "polygon_px": [
+          [
+            1415,
+            290
+          ],
+          [
+            1655,
+            185
+          ],
+          [
+            1880,
+            315
+          ],
+          [
+            1610,
+            445
+          ]
+        ],
+        "world_bbox_m": [
+          5.5,
+          40,
+          214.5,
+          50
+        ]
+      },
+      {
+        "feature_id": "TR-RAIL-03",
+        "name": "S-Bahn-Gleisbett & BR 481 (Spurweite 1.435 mm, L=36,8 m/Viertelzug [VERIFIED])",
+        "category": "TRACK_BED",
+        "measurement_status": "VERIFIED",
+        "polygon_px": [
+          [
+            125,
+            960
+          ],
+          [
+            240,
+            610
+          ],
+          [
+            1220,
+            305
+          ],
+          [
+            1220,
+            405
+          ],
+          [
+            195,
+            1000
+          ]
+        ],
+        "world_bbox_m": [
+          0,
+          10,
+          220,
+          15
+        ]
+      },
+      {
+        "feature_id": "TR-RAIL-04",
+        "name": "Historische Bahnsteighalle (164 x 37 m, 19 Binder [VERIFIED: Denkmal/SSB])",
+        "category": "ROOF_TRUSS",
+        "measurement_status": "VERIFIED",
+        "polygon_px": [
+          [
+            135,
+            610
+          ],
+          [
+            550,
+            0
+          ],
+          [
+            1700,
+            0
+          ],
+          [
+            1995,
+            485
+          ],
+          [
+            1750,
+            250
+          ],
+          [
+            605,
+            365
+          ]
+        ],
+        "world_bbox_m": [
+          28,
+          5,
+          192,
+          70
+        ]
+      },
+      {
+        "feature_id": "TR-RAIL-05",
+        "name": "Wetterschutzhaus auf Bahnsteig (DB InfraGO: W/D [VERIFIED])",
+        "category": "SHELTER",
+        "measurement_status": "VERIFIED_PRESENCE_ESTIMATED_SIZE",
+        "polygon_px": [
+          [
+            455,
+            895
+          ],
+          [
+            615,
+            845
+          ],
+          [
+            695,
+            975
+          ],
+          [
+            535,
+            1085
+          ]
+        ],
+        "world_bbox_m": [
+          20,
+          20,
+          30,
+          25
+        ]
+      },
+      {
+        "feature_id": "TR-RAIL-06",
+        "name": "Treppenanschluss Bahnsteig (VC-ST-A / A2)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            895,
+            765
+          ],
+          [
+            1215,
+            415
+          ],
+          [
+            1290,
+            450
+          ],
+          [
+            995,
+            835
+          ]
+        ],
+        "world_bbox_m": [
+          35,
+          15,
+          45,
+          20
+        ],
+        "connector_id": "VC-ST-A"
+      },
+      {
+        "feature_id": "TR-RAIL-07",
+        "name": "Verglaster Aufzugsschacht (VC-LIFT-01 / 02 [VERIFIED: 2 Aufzüge])",
+        "category": "CONNECTOR",
+        "measurement_status": "VERIFIED_COUNT_ESTIMATED_POS",
+        "polygon_px": [
+          [
+            1295,
+            365
+          ],
+          [
+            1425,
+            365
+          ],
+          [
+            1425,
+            835
+          ],
+          [
+            1295,
+            835
+          ]
+        ],
+        "world_bbox_m": [
+          105,
+          15,
+          110,
+          20
+        ],
+        "connector_id": "VC-LIFT-01"
+      },
+      {
+        "feature_id": "TR-RAIL-08",
+        "name": "Doppel-Fahrtreppe zum Bahnsteig (VC-ESC-A / A2 [VERIFIED: 8 Fahrtreppen])",
+        "category": "CONNECTOR",
+        "measurement_status": "DERIVED",
+        "polygon_px": [
+          [
+            1250,
+            910
+          ],
+          [
+            1565,
+            515
+          ],
+          [
+            1675,
+            560
+          ],
+          [
+            1355,
+            975
+          ]
+        ],
+        "world_bbox_m": [
+          135,
+          40,
+          150,
+          45
+        ],
+        "connector_id": "VC-ESC-A"
+      }
+    ]
+  },
+  "UG-03": {
+    "map_id": "UG-03",
+    "reference_image": "references/UG-03/REF_IMG_4955_underground_cutaway.jpeg",
+    "image_width_px": 2048,
+    "image_height_px": 1529,
+    "traced_features": [
+      {
+        "feature_id": "TR-UG-01",
+        "name": "Unterirdische Verteilerebene (Ebene L-1 = -4,50 m)",
+        "category": "CONCOURSE_FLOOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            115,
+            1045
+          ],
+          [
+            1185,
+            445
+          ],
+          [
+            1975,
+            895
+          ],
+          [
+            1605,
+            1465
+          ],
+          [
+            1285,
+            1315
+          ],
+          [
+            855,
+            1475
+          ]
+        ],
+        "world_bbox_m": [
+          0,
+          0,
+          220,
+          80
+        ]
+      },
+      {
+        "feature_id": "TR-UG-02",
+        "name": "U-Bahn-Zugangspavillon 'U Alexanderplatz' (VC-EXT-UG-01)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            420,
+            365
+          ],
+          [
+            700,
+            220
+          ],
+          [
+            925,
+            340
+          ],
+          [
+            925,
+            485
+          ],
+          [
+            640,
+            635
+          ],
+          [
+            420,
+            515
+          ]
+        ],
+        "world_bbox_m": [
+          15,
+          60,
+          25,
+          65
+        ],
+        "connector_id": "VC-EXT-UG-01"
+      },
+      {
+        "feature_id": "TR-UG-03",
+        "name": "BVG-Kundenzentrum / Bäcker Insel-Pavillon (UG-OBJ-001)",
+        "category": "KIOSK_FOOTPRINT",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            955,
+            795
+          ],
+          [
+            1085,
+            735
+          ],
+          [
+            1220,
+            805
+          ],
+          [
+            1220,
+            935
+          ],
+          [
+            1085,
+            1005
+          ],
+          [
+            955,
+            935
+          ]
+        ],
+        "world_bbox_m": [
+          115,
+          30,
+          130,
+          40
+        ]
+      },
+      {
+        "feature_id": "TR-UG-04",
+        "name": "Treppenabgang L0 -> L-1 (VC-ST-B / VC-ST-B1)",
+        "category": "CONNECTOR",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            895,
+            745
+          ],
+          [
+            1205,
+            425
+          ],
+          [
+            1290,
+            465
+          ],
+          [
+            985,
+            805
+          ]
+        ],
+        "world_bbox_m": [
+          65,
+          15,
+          105,
+          35
+        ],
+        "connector_id": "VC-ST-B1"
+      },
+      {
+        "feature_id": "TR-UG-05",
+        "name": "Verglaster Aufzugsschacht (VC-LIFT-01: L-1 <-> L0 <-> L+1)",
+        "category": "CONNECTOR",
+        "measurement_status": "VERIFIED_COUNT_ESTIMATED_POS",
+        "polygon_px": [
+          [
+            1295,
+            365
+          ],
+          [
+            1425,
+            365
+          ],
+          [
+            1425,
+            845
+          ],
+          [
+            1295,
+            845
+          ]
+        ],
+        "world_bbox_m": [
+          105,
+          15,
+          110,
+          20
+        ],
+        "connector_id": "VC-LIFT-01"
+      },
+      {
+        "feature_id": "TR-UG-06",
+        "name": "Doppel-Fahrtreppe L0 -> L-1 (VC-ESC-B)",
+        "category": "CONNECTOR",
+        "measurement_status": "DERIVED",
+        "polygon_px": [
+          [
+            1250,
+            910
+          ],
+          [
+            1555,
+            515
+          ],
+          [
+            1670,
+            565
+          ],
+          [
+            1355,
+            995
+          ]
+        ],
+        "world_bbox_m": [
+          165,
+          40,
+          180,
+          45
+        ],
+        "connector_id": "VC-ESC-B"
+      },
+      {
+        "feature_id": "TR-UG-07",
+        "name": "Abgang 'Zu den Gleisen U2 U5 U8' (VC-UG-U258-01, U5 = -11,25 m [VERIFIED])",
+        "category": "CONNECTOR",
+        "measurement_status": "VERIFIED_DEPTH_ESTIMATED_POS",
+        "polygon_px": [
+          [
+            975,
+            1435
+          ],
+          [
+            1175,
+            1235
+          ],
+          [
+            1365,
+            1345
+          ],
+          [
+            1185,
+            1529
+          ]
+        ],
+        "world_bbox_m": [
+          95,
+          65,
+          110,
+          70
+        ],
+        "connector_id": "VC-UG-U258-01"
+      },
+      {
+        "feature_id": "TR-UG-08",
+        "name": "Fahrkartenautomaten-Gruppen (UG-OBJ-003)",
+        "category": "TICKET_MACHINE_BAY",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            735,
+            1025
+          ],
+          [
+            995,
+            1025
+          ],
+          [
+            995,
+            1245
+          ],
+          [
+            735,
+            1245
+          ]
+        ],
+        "world_bbox_m": [
+          35,
+          45,
+          50,
+          50
+        ]
+      },
+      {
+        "feature_id": "TR-UG-09",
+        "name": "Geflieste Deckenstützen-Reihe (STATION_PIER_BASE)",
+        "category": "STRUCTURAL_PIER",
+        "measurement_status": "ESTIMATED",
+        "polygon_px": [
+          [
+            365,
+            890
+          ],
+          [
+            450,
+            890
+          ],
+          [
+            450,
+            1155
+          ],
+          [
+            365,
+            1155
+          ]
+        ],
+        "world_bbox_m": [
+          40,
+          25,
+          85,
+          55
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "type": "map",
+  "version": "1.10",
+  "tiledversion": "1.10.2",
+  "orientation": "isometric",
+  "renderorder": "right-down",
+  "width": 4,
+  "height": 3,
+  "tilewidth": 256,
+  "tileheight": 128,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Ground",
+      "type": "tilelayer",
+      "width": 4,
+      "height": 3,
+      "data": [1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "offsetx": 0,
+      "offsety": 0
+    },
+    {
+      "id": 2,
+      "name": "walkable_tier_0",
+      "type": "objectgroup",
+      "draworder": "topdown",
+      "objects": [
+        {
+          "id": 10,
+          "name": "Walkable demo",
+          "type": "walkable",
+          "x": 128,
+          "y": 64,
+          "width": 512,
+          "height": 256,
+          "polygon": [{"x": 0, "y": 0}, {"x": 512, "y": 0}, {"x": 512, "y": 256}, {"x": 0, "y": 256}],
+          "properties": [{"name": "allowed", "type": "bool", "value": true}]
+        }
+      ],
+      "visible": true,
+      "opacity": 1,
+      "offsetx": 0,
+      "offsety": 0
+    },
+    {
+      "id": 3,
+      "name": "foreground_roof",
+      "type": "tilelayer",
+      "width": 4,
+      "height": 3,
+      "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "visible": true,
+      "opacity": 0.8,
+      "properties": [{"name": "renderRole", "type": "string", "value": "foreground"}]
+    }
+  ],
+  "tilesets": [
+    {
+      "firstgid": 1,
+      "name": "demo-ground",
+      "tilewidth": 256,
+      "tileheight": 128,
+      "tilecount": 2,
+      "columns": 2,
+      "image": "../../../assets/tilesets/demo-ground.png",
+      "imagewidth": 512,
+      "imageheight": 128,
+      "margin": 0,
+      "spacing": 0
+    }
+  ]
+}

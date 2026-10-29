@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "files": [
+    "docs/types/import-meta-env.d.ts",
+    "src/core/SceneManifest.ts",
+    "src/core/UniversalIsoMath.ts",
+    "src/rendering/CutawayController.ts",
+    "src/tiled/TiledDepthLayer.ts",
+    "src/navigation/PolygonNavMesh.ts",
+    "src/tiled/TiledJsonImporter.ts",
+    "src/tiled/TiledNavigationExtractor.ts",
+    "src/core/SceneManifestLoader.ts",
+    "src/world/WorldModel.ts",
+    "src/world/WorldProjectLoader.ts"
+  ]
+}
